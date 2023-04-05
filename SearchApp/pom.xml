@@ -25,12 +25,11 @@
 			<version>7.5</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>automation.selenium</groupId>
-			<artifactId>selenium-core</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
+		
+
+		
 	</dependencies>
+	
 	<name>SW2Maven</name>
 	<description>This is the Maven Project for SW2</description>
 	<build>
