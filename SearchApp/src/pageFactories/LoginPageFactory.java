@@ -1,25 +1,35 @@
 package pageFactories;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.AutomationHelper;
 
-public class LoginPageFactory extends SearchBase {
+/**
+ * Page Factory Class to contain methods that interact with objects on the
+ * <b>Login Page</b>
+ * 
+ * @author jesse.childress
+ *
+ */
+public class LoginPageFactory extends diSearchBase {
 
 	/**
 	 * Page Constructor: Accepts the WebDriver from the calling page and
 	 * instantiates the elements on the page.
 	 */
 	public LoginPageFactory() {
+		// Elements must be initiated here.
+		// This constructor and extension is a bit different than normal ones in that it
+		// is initiated here and gets the base URL.
 		PageFactory.initElements(driver, this);
+
 	}
-	
-	@FindBy(id="Register_email")
+
+	@FindBy(id = "Register_email")
 	WebElement email;
-	
+
 	/**
 	 * Set the Email field with the passed in text
 	 */
@@ -27,7 +37,7 @@ public class LoginPageFactory extends SearchBase {
 		AutomationHelper.printMethodName();
 		AutomationHelper.setTextField(email, emailText);
 	}
-	
+
 	/**
 	 * Reads the text inside the email field
 	 */
@@ -35,10 +45,10 @@ public class LoginPageFactory extends SearchBase {
 		AutomationHelper.printMethodName();
 		return AutomationHelper.getText(email);
 	}
-	
-	@FindBy (id = "Register_password")
+
+	@FindBy(id = "Register_password")
 	WebElement password;
-	
+
 	/**
 	 * Set the Password field with the passed in text
 	 */
@@ -46,16 +56,14 @@ public class LoginPageFactory extends SearchBase {
 		AutomationHelper.printMethodName();
 		AutomationHelper.setTextField(this.password, password);
 	}
-	
 
-	
 	@FindBy(xpath = "//button/span[text()='Login']")
 	WebElement loginButton;
-	
+
 	/**
 	 * Clicks the login button
 	 */
-	public void clickLogin(){
+	public void clickLogin() {
 		loginButton.click();
 	}
 }

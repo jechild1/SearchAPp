@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import configuration.SearchConfig;
 
-public abstract class SearchBase extends SearchConfig {
+public abstract class diSearchBase extends SearchConfig {
 	
 	/*
 	 * Initialize elements of a given page factory
@@ -12,5 +12,7 @@ public abstract class SearchBase extends SearchConfig {
 	public void initializeElements() {
 		PageFactory.initElements(driver, this);
 	}
+	
+
 
 }

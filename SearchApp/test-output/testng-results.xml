@@ -19,13 +19,25 @@
     <line>
       <![CDATA[]]>
     </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Aretec Search' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-04-05T15:51:44 EDT" name="Default suite" finished-at="2023-04-05T15:51:54 EDT" duration-ms="10331">
+  <suite started-at="2023-04-07T11:55:22 EDT" name="Default suite" finished-at="2023-04-07T11:55:33 EDT" duration-ms="10770">
     <groups>
     </groups>
-    <test started-at="2023-04-05T15:51:44 EDT" name="Default test" finished-at="2023-04-05T15:51:54 EDT" duration-ms="10331">
+    <test started-at="2023-04-07T11:55:22 EDT" name="Default test" finished-at="2023-04-07T11:55:33 EDT" duration-ms="10770">
       <class name="testCases.Login.Login">
-        <test-method signature="loginTest()[pri:0, instance:testCases.Login.Login@65c7a252]" started-at="2023-04-05T15:51:44 EDT" name="loginTest" finished-at="2023-04-05T15:51:53 EDT" duration-ms="9855" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:testCases.Login.Login@f09733f]" started-at="2023-04-07T11:55:22 EDT" name="loginTest" finished-at="2023-04-07T11:55:32 EDT" duration-ms="10224" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Method: setEmail]]>
@@ -45,20 +57,32 @@
             <line>
               <![CDATA[]]>
             </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Aretec Search' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Login.Login@65c7a252]" started-at="2023-04-05T15:51:53 EDT" name="afterMethod" finished-at="2023-04-05T15:51:53 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Login.Login@f09733f]" started-at="2023-04-07T11:55:32 EDT" name="afterMethod" finished-at="2023-04-07T11:55:33 EDT" duration-ms="512" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=Login.loginTest()[pri:0, instance:testCases.Login.Login@65c7a252] output=Method: setEmail]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=Login.loginTest()[pri:0, instance:testCases.Login.Login@f09733f] output=Method: setEmail]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Login.Login@65c7a252]" started-at="2023-04-05T15:51:53 EDT" name="afterClass" finished-at="2023-04-05T15:51:54 EDT" duration-ms="442" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Login.Login@f09733f]" started-at="2023-04-07T11:55:33 EDT" name="afterClass" finished-at="2023-04-07T11:55:33 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

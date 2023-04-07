@@ -36,6 +36,10 @@ public abstract class SearchBaseTestScriptConfig extends SearchConfig {
 					result.getName() + " - " + formatter.format(java.time.LocalDateTime.now()));
 		}
 
+		// Note: In some instances, we want to override this after method as to not quit
+		// after each method, when doing multiple @Tests.
+		driver.quit();
+
 	}
 
 	/**
@@ -48,7 +52,8 @@ public abstract class SearchBaseTestScriptConfig extends SearchConfig {
 				TakesScreenshot ts = (TakesScreenshot) driver;
 
 				File source = ts.getScreenshotAs(OutputType.FILE);
-//				FileHandler.copy(source, new File(DEFAULT_FILE_PATH_FOR_SCREENSHOTS + screenshotName + ".png"));
+				FileHandler.copy(source, new File(DEFAULT_FILE_PATH_FOR_SCREENSHOTS + screenshotName + ".png"));
+
 				System.out.println("Screenshot taken");
 			} catch (Exception e) {
 				System.out.println("Exception while taking screenshot " + e.getMessage());
