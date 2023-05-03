@@ -14,6 +14,9 @@ import utilities.AutomationHelper;
  *
  */
 public class LoginPageFactory extends diSearchBase {
+	
+	public static String regexURL = BASE_URL + "login/";
+
 
 	/**
 	 * Page Constructor: Accepts the WebDriver from the calling page and
