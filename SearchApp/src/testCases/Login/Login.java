@@ -1,6 +1,5 @@
 package testCases.Login;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageFactories.LoginPageFactory;
@@ -25,13 +24,13 @@ public class Login extends SearchBaseTestScriptConfig{
 		loginPageFactory.clickLogin();
 		
 		SearchPageFactory searchPF = new SearchPageFactory();
-		AutomationHelper.waitSeconds(3);
 
 		searchPF.setSearchField("What is selenium?");
-//		searchPF.clickSearch();
+//		searchPF.clickSearchMagnifyingGlass();
 		searchPF.hitEnter();
 		
-		AutomationHelper.waitSeconds(3);
+		AutomationHelper.waitSeconds(10);
+		
 		
 
 		}
