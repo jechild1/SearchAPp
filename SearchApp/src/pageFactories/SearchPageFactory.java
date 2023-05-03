@@ -9,7 +9,7 @@ import utilities.AutomationHelper;
 
 public class SearchPageFactory extends diSearchMenusPageFactory {
 
-	public static String regexURL = BASE_URL + "login";
+	public static String regexURL = BASE_URL;
 
 	
 	/**
@@ -59,13 +59,13 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 	}
 
 	@FindBy(xpath = "//span[@aria-label= 'search']")
-	WebElement searchButton;
+	WebElement searchIcon;
 
 	/**
-	 * Clicks the search button.
+	 * Clicks the search magnifying glass icon.
 	 */
-	public void clickSearch() {
-		searchButton.click();
+	public void clickSearchMagnifyingGlass() {
+		searchIcon.click();
 	}
 	
 	/**
