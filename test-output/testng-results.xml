@@ -2,22 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Method: setEmail]]>
+      <![CDATA[Beginning Login Smoke Test...]]>
     </line>
     <line>
-      <![CDATA[]]>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
     </line>
     <line>
       <![CDATA[Method: setPassword]]>
     </line>
     <line>
-      <![CDATA[]]>
-    </line>
-    <line>
       <![CDATA[Method: readEmail]]>
     </line>
     <line>
-      <![CDATA[]]>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
     </line>
     <line>
       <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
@@ -29,39 +35,39 @@
       <![CDATA[Waiting for page to load completely...]]>
     </line>
     <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Method: setSearchField]]>
-    </line>
-    <line>
-      <![CDATA[]]>
+      <![CDATA[The page '' is fully loaded now.]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-03T07:12:28 EDT" name="Default suite" finished-at="2023-05-03T07:13:04 EDT" duration-ms="35325">
+  <suite started-at="2023-05-03T15:25:51 EDT" name="Default suite" finished-at="2023-05-03T15:26:01 EDT" duration-ms="10261">
     <groups>
     </groups>
-    <test started-at="2023-05-03T07:12:28 EDT" name="Default test" finished-at="2023-05-03T07:13:04 EDT" duration-ms="35325">
-      <class name="testCases.Login.Login">
-        <test-method signature="loginTest()[pri:0, instance:testCases.Login.Login@6d60fe40]" started-at="2023-05-03T07:12:29 EDT" name="loginTest" finished-at="2023-05-03T07:13:02 EDT" duration-ms="32957" status="PASS">
+    <test started-at="2023-05-03T15:25:51 EDT" name="Default test" finished-at="2023-05-03T15:26:01 EDT" duration-ms="10261">
+      <class name="testCases.SmokeTests.LoginSmoke">
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.SmokeTests.LoginSmoke@6d60fe40]" started-at="2023-05-03T15:25:51 EDT" name="loginSmokeTest" finished-at="2023-05-03T15:26:00 EDT" duration-ms="8667" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Method: setEmail]]>
+              <![CDATA[Beginning Login Smoke Test...]]>
             </line>
             <line>
-              <![CDATA[]]>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
             </line>
             <line>
               <![CDATA[Method: setPassword]]>
             </line>
             <line>
-              <![CDATA[]]>
-            </line>
-            <line>
               <![CDATA[Method: readEmail]]>
             </line>
             <line>
-              <![CDATA[]]>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
             </line>
             <line>
               <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
@@ -73,32 +79,26 @@
               <![CDATA[Waiting for page to load completely...]]>
             </line>
             <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: setSearchField]]>
-            </line>
-            <line>
-              <![CDATA[]]>
+              <![CDATA[The page '' is fully loaded now.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Login.Login@6d60fe40]" started-at="2023-05-03T07:13:02 EDT" name="afterMethod" finished-at="2023-05-03T07:13:04 EDT" duration-ms="2117" status="PASS">
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.LoginSmoke@6d60fe40]" started-at="2023-05-03T15:26:00 EDT" name="afterMethod" finished-at="2023-05-03T15:26:01 EDT" duration-ms="1505" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=Login.loginTest()[pri:0, instance:testCases.Login.Login@6d60fe40] output=Method: setEmail]]]>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=LoginSmoke.loginSmokeTest()[pri:0, instance:testCases.SmokeTests.LoginSmoke@6d60fe40] output=Beginning Login Smoke Test...]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Login.Login@6d60fe40]" started-at="2023-05-03T07:13:04 EDT" name="afterClass" finished-at="2023-05-03T07:13:04 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.LoginSmoke@6d60fe40]" started-at="2023-05-03T15:26:01 EDT" name="afterClass" finished-at="2023-05-03T15:26:01 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.Login.Login -->
+      </class> <!-- testCases.SmokeTests.LoginSmoke -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

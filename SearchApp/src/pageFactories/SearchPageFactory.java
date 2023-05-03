@@ -9,7 +9,7 @@ import utilities.AutomationHelper;
 
 public class SearchPageFactory extends diSearchMenusPageFactory {
 
-	public static String regexURL = BASE_URL;
+	public static String regexURL = BASE_URL ;
 
 	
 	/**
