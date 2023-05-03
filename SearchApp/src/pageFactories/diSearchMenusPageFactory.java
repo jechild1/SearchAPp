@@ -7,6 +7,7 @@ import java.time.Duration;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 /**
  * All pages with menus should extend this page. This allows access to methods
@@ -32,7 +33,13 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 
 		// Waits for a specified amount of time until the URL matches. After timeout,
 		// assertion happens.
-		new WebDriverWait(driver, Duration.ofSeconds(NORMAL_TIMEOUT)).until(ExpectedConditions.urlMatches(regexURL));
+//		new WebDriverWait(driver, Duration.ofSeconds(NORMAL_TIMEOUT)).until(ExpectedConditions.urlMatches(regexURL));
+		new WebDriverWait(driver, Duration.ofSeconds(NORMAL_TIMEOUT)).until(ExpectedConditions.urlToBe(regexURL));
+
+		
+		Reporter.log("Expected URL: " + regexURL, true);
+		Reporter.log("Current URL : " + this.getCurrentUrl(), true);
+		
 
 		assertTrue(this.getCurrentUrl().matches(regexURL), "Validate URL Changed to " + regexURL);
 	}
