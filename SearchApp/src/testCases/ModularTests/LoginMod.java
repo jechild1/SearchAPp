@@ -1,6 +1,5 @@
 package testCases.ModularTests;
 
-import org.testng.Assert;
 import org.testng.Reporter;
 
 import pageFactories.LoginPageFactory;
@@ -24,12 +23,13 @@ public class LoginMod extends SearchBaseTestScriptConfig {
 	public void login(String userName, String password) {
 
 		Reporter.log("Beginning Login Modular Test...", true);
+		
 		LoginPageFactory loginPageFactory = new LoginPageFactory();
 
+				
 		loginPageFactory.loadPage();
 		
-		//Ensure the page is loaded
-//		Assert.assertEquals(driver.getTitle(), "Test App");
+
 
 		// set fields
 		loginPageFactory.setEmail(userName);
