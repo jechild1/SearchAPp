@@ -14,9 +14,8 @@ import utilities.AutomationHelper;
  *
  */
 public class LoginPageFactory extends diSearchBase {
-	
-	public static String regexURL = BASE_URL + "login/";
 
+	public static String regexURL = BASE_URL + "login/";
 
 	/**
 	 * Page Constructor: Accepts the WebDriver from the calling page and
@@ -26,6 +25,7 @@ public class LoginPageFactory extends diSearchBase {
 		// Elements must be initiated here.
 		// This constructor and extension is a bit different than normal ones in that it
 		// is initiated here and gets the base URL.
+
 		PageFactory.initElements(driver, this);
 
 	}
@@ -38,6 +38,7 @@ public class LoginPageFactory extends diSearchBase {
 	 */
 	public void setEmail(String emailText) {
 		AutomationHelper.printMethodName();
+
 		AutomationHelper.setTextField(email, emailText);
 	}
 
@@ -46,6 +47,7 @@ public class LoginPageFactory extends diSearchBase {
 	 */
 	public String readEmail() {
 		AutomationHelper.printMethodName();
+
 		return AutomationHelper.getText(email);
 	}
 
