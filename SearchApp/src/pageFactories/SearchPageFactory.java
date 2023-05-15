@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import utilities.AutomationHelper;
 
@@ -17,8 +18,13 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 	 * instantiates the elements on the page.
 	 */
 	public SearchPageFactory() {
+		
 		super(regexURL);
-		waitForPageToLoad();
+		PageFactory.initElements(driver, this);
+		
+		//TODO: Remove this code when defect AS-182 is corrected, to where things load twice
+		AutomationHelper.waitSeconds(3);
+
 	}
 
 	@FindBy(xpath = "//input[@placeholder='What would you like to search?']")
@@ -33,7 +39,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		AutomationHelper.printMethodName();
 		AutomationHelper.setTextField(searchField, searchText);
 		
-//		searchField.sendKeys(Keys.TAB);
+		searchField.sendKeys(Keys.TAB);
 //		
 //		int counter = 1;
 //		do {
