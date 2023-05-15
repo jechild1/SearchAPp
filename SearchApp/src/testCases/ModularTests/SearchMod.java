@@ -20,14 +20,15 @@ public class SearchMod extends SearchBaseTestScriptConfig {
 		
 
 		SearchPageFactory searchPF = new SearchPageFactory();
-		
 
 		searchPF.setSearchField(searchText);
 		
+		
 		//Ensure that the text is in the field
 		Assert.assertEquals(searchPF.readSearchField(), searchText);
-		
+
 		searchPF.clickSearchMagnifyingGlass();
+		
 //		searchPF.hitEnter();
 
 	}
