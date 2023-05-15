@@ -2,10 +2,10 @@ package testCases.SmokeTests;
 
 import org.testng.annotations.Test;
 
-import pageFactories.SearchPageFactory;
 import testCases.SearchBaseTestScriptConfig;
 import testCases.ModularTests.LoginMod;
 import testCases.ModularTests.SearchMod;
+import utilities.AutomationHelper;
 
 /**
  * @author Jesse Childress
@@ -13,7 +13,7 @@ import testCases.ModularTests.SearchMod;
  */
 public class LeftMenusSmoke extends SearchBaseTestScriptConfig {
 	
-	@Test
+	@Test (invocationCount = 5)
 	public void leftMenusSmoke() {
 		
 		//Login to the system
@@ -24,9 +24,19 @@ public class LeftMenusSmoke extends SearchBaseTestScriptConfig {
 		SearchMod searchMod = new SearchMod();
 		searchMod.search("What does aretec do?");
 		
+		
+		
+		
+		
 		/*
 		 * The Menu Navigation links are in their own abstract classes.
 		 */
+		
+//		SearchResultsPageFactory searchResultsPF = new SearchResultsPageFactory();
+//		searchResultsPF.clickSettings();
+//		
+		AutomationHelper.waitSeconds(3);
+		
 		
 		
 		
