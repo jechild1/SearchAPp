@@ -26,6 +26,10 @@ public class SearchMod extends SearchBaseTestScriptConfig {
 		
 		//Ensure that the text is in the field
 		Assert.assertEquals(searchPF.readSearchField(), searchText);
+		
+		//Ensure correct API is selected.
+		searchPF.setAPIDefault(DEFAULT_API);
+		
 
 		searchPF.clickSearchMagnifyingGlass();
 		
