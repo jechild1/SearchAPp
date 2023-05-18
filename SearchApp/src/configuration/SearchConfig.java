@@ -1,6 +1,8 @@
 
 package configuration;
 
+import java.io.File;
+
 import CoreConfig.CoreConfig;
 
 public abstract class SearchConfig extends CoreConfig {
@@ -13,6 +15,15 @@ public abstract class SearchConfig extends CoreConfig {
 	
 	//Default Locations
 	protected static String DEFAULT_FILE_PATH_FOR_SCREENSHOTS = System.getenv("Eclipse-ScreenshotsLocation");
+	
+	//Default API for search
+	protected static boolean DEFAULT_API = true;
+	protected static boolean LFQA_AIP = false;
+	
+	private static String LOCAL_DATA_SETS = "dataSets\\localDataSets\\";
+
+	
+	
 
 	// Constructor
 	public SearchConfig() {
@@ -26,6 +37,19 @@ public abstract class SearchConfig extends CoreConfig {
 	 */
 	public String getCurrentUrl() {
 		return driver.getCurrentUrl();
+	}
+	
+	/**
+	 * Generates a full file name path to be used to find a data set. This uses data
+	 * in the dataSets folder. We can specify here in one place if we want to use
+	 * local data or master.
+	 * 
+	 * @param fileNameWithExtension
+	 * @return String
+	 */
+	protected String generateFullFileNameAndPath(String fileNameWithExtension) {
+		return new File(LOCAL_DATA_SETS + fileNameWithExtension).getAbsolutePath();
+
 	}
 
 }
