@@ -88,7 +88,8 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	}
 	
 	//This is the icon of the person where the Settings and Logout are present
-	@FindBy (xpath = "//p[@class='ant-dropdown-trigger header-title']")
+	//The OR in the xpath is because the object type changes inside the settings menus.
+	@FindBy (xpath = "//p[@class='ant-dropdown-trigger header-title'] | //p[@class='ant-dropdown-trigger header-title active-header']")
 	WebElement settingsMenu;
 	
 	/**
@@ -101,12 +102,33 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		
 		//Wait for the Sub-menu to appear
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='ant-dropdown ant-dropdown-show-arrow ant-dropdown-placement-bottomRight']")));
+		
+		String settingsXpath = "//p[text()='Settings']";
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(settingsXpath)));
 		
 		//Once the above menu is present, then we can click the sub menus.
-		
-		WebElement settingsLink = driver.findElement(By.xpath("//div[@class='ant-dropdown ant-dropdown-show-arrow ant-dropdown-placement-bottomRight']//p[text() = 'Settings']"));
+		WebElement settingsLink = driver.findElement(By.xpath(settingsXpath));
 		
 		settingsLink.click();
+	}
+	
+	/**
+	 * Click the Logout menu
+	 */
+	public void clickLogout() {
+		AutomationHelper.printMethodName();
+		
+		settingsMenu.click();
+		
+		//Wait for the Sub-menu to appear
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
+		
+		String logoutXpath = "//p[contains(text(),'Logout')]";
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(logoutXpath)));
+		
+		//Once the above menu is present, then we can click the sub menus.
+		WebElement logoutLink = driver.findElement(By.xpath(logoutXpath));
+		
+		logoutLink.click();
 	}
 }
