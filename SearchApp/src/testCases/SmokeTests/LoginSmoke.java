@@ -7,7 +7,7 @@ import testCases.SearchBaseTestScriptConfig;
 import testCases.ModularTests.LoginMod;
 
 /**
- * Test to perform a smoke test on the login process.
+ * Test to perform a successful login.
  * 
  * @author Jesse Childress
  *
