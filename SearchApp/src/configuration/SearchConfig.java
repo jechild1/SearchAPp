@@ -18,7 +18,7 @@ public abstract class SearchConfig extends CoreConfig {
 	
 	//Default API for search
 	protected static boolean DEFAULT_API = true;
-	protected static boolean LFQA_AIP = false;
+	protected static boolean LFQA_API = false;
 	
 	private static String LOCAL_DATA_SETS = "dataSets\\localDataSets\\";
 
