@@ -292,6 +292,30 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		}
 
 	}
+	
+	/**
+	 * Method to unselect all currently selected domains
+	 */
+	public void unselectAllDomains() {
+		
+		clickAllDomainsButton();
+
+		// First, open all of the closed domains
+		openClosedDomains();
+
+		// Second, uncheck ALL domains. This is necessary to get a clean slate.
+		// Find a list of checked domains
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		List<WebElement> checkedDomains = driver.findElements(
+				By.xpath("//span[@class = 'ant-tree-checkbox ant-tree-checkbox-checked']/following-sibling::span"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+
+		for(WebElement currentCheckedDomain : checkedDomains) {
+			currentCheckedDomain.click();
+			AutomationHelper.waitMillis(100);
+		}
+		
+	}
 
 	@FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg upl_btn_icon']")
 	WebElement uploadDocumentsButton;
