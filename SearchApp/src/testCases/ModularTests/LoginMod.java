@@ -1,5 +1,6 @@
 package testCases.ModularTests;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import pageFactories.LoginPageFactory;
@@ -36,6 +37,8 @@ public class LoginMod extends SearchBaseTestScriptConfig {
 		loginPageFactory.setPassword(password);
 
 		Reporter.log("Email Address: " + loginPageFactory.readEmail(), true);
+		
+		Assert.assertEquals(loginPageFactory.readEmail(), userName, "Login Email");
 
 		loginPageFactory.clickLogin();
 		
