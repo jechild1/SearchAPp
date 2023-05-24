@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Entire Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="selectedBrowser" value="chrome"/>
+  <test thread-count="1" parallel="classes" name="Smoke Test - Generic Login(failed)">
+    <classes>
+      <class name="testCases.SmokeTests.LoginSmoke">
+        <methods>
+          <include name="afterClass"/>
+          <include name="loginSmokeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.SmokeTests.LoginSmoke -->
+    </classes>
+  </test> <!-- Smoke Test - Generic Login(failed) -->
+</suite> <!-- Failed suite [Entire Suite] -->

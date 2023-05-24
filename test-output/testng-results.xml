@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Beginning Login Smoke Test...]]>
+    </line>
     <line>
       <![CDATA[Beginning Login Modular Test...]]>
     </line>
@@ -23,6 +26,12 @@
       <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
     </line>
     <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
       <![CDATA[Waiting for page to load completely...]]>
     </line>
     <line>
@@ -32,7 +41,68 @@
       <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
     </line>
     <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
       <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -53,24 +123,143 @@
       <![CDATA[Method: clickAllDomainsButton]]>
     </line>
     <line>
-      <![CDATA[Method: openClosedDomains]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickAllDomainsButton]]>
-    </line>
-    <line>
       <![CDATA[All Domains Button already clicked. Menus already present on page.]]>
     </line>
     <line>
       <![CDATA[Method: openClosedDomains]]>
     </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=What%20can%20Aretec%20help%20me%20do?%20Give%20me%20a%20bulleted%20list]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: isSearchResultsPresent]]>
+    </line>
+    <line>
+      <![CDATA[Method: isEvaluationYearPresent]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickEvaluationYear]]>
+    </line>
+    <line>
+      <![CDATA[Method: isTopicsPresent]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickTopics]]>
+    </line>
+    <line>
+      <![CDATA[Method: isDocumentsPresent]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickDocuments]]>
+    </line>
+    <line>
+      <![CDATA[Method: isDomainsPresent]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: isHistoryPresent]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickHistory]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-05-18T16:02:39 EDT" name="Default suite" finished-at="2023-05-18T16:03:14 EDT" duration-ms="34765">
+  <suite started-at="2023-05-24T11:52:06 EDT" name="Entire Suite" finished-at="2023-05-24T11:52:36 EDT" duration-ms="30449">
     <groups>
     </groups>
-    <test started-at="2023-05-18T16:02:39 EDT" name="Default test" finished-at="2023-05-18T16:03:14 EDT" duration-ms="34765">
+    <test started-at="2023-05-24T11:52:06 EDT" name="Smoke Test - Generic Login" finished-at="2023-05-24T11:52:16 EDT" duration-ms="9993">
+      <class name="testCases.SmokeTests.LoginSmoke">
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a]" started-at="2023-05-24T11:52:06 EDT" name="loginSmokeTest" finished-at="2023-05-24T11:52:15 EDT" duration-ms="9635" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning Login Smoke Test...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a]" started-at="2023-05-24T11:52:15 EDT" name="afterMethod" finished-at="2023-05-24T11:52:16 EDT" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=LoginSmoke.loginSmokeTest()[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a] output=Beginning Login Smoke Test...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a]" started-at="2023-05-24T11:52:16 EDT" name="afterClass" finished-at="2023-05-24T11:52:16 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.SmokeTests.LoginSmoke -->
+    </test> <!-- Smoke Test - Generic Login -->
+    <test started-at="2023-05-24T11:52:16 EDT" name="Smoke Test - Left Menus" finished-at="2023-05-24T11:52:36 EDT" duration-ms="20431">
       <class name="testCases.SmokeTests.LeftMenusSmoke">
-        <test-method signature="leftMenusSmoke()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@6d60fe40]" started-at="2023-05-18T16:02:39 EDT" name="leftMenusSmoke" finished-at="2023-05-18T16:03:12 EDT" duration-ms="33307" status="PASS">
+        <test-method signature="leftMenusSmoke()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8]" started-at="2023-05-24T11:52:16 EDT" name="leftMenusSmoke" finished-at="2023-05-24T11:52:36 EDT" duration-ms="20109" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Beginning Login Modular Test...]]>
@@ -94,6 +283,12 @@
               <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
             </line>
             <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
               <![CDATA[Waiting for page to load completely...]]>
             </line>
             <line>
@@ -103,7 +298,29 @@
               <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
             </line>
             <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
               <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -124,35 +341,89 @@
               <![CDATA[Method: clickAllDomainsButton]]>
             </line>
             <line>
-              <![CDATA[Method: openClosedDomains]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickAllDomainsButton]]>
-            </line>
-            <line>
               <![CDATA[All Domains Button already clicked. Menus already present on page.]]>
             </line>
             <line>
               <![CDATA[Method: openClosedDomains]]>
             </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=What%20can%20Aretec%20help%20me%20do?%20Give%20me%20a%20bulleted%20list]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: isSearchResultsPresent]]>
+            </line>
+            <line>
+              <![CDATA[Method: isEvaluationYearPresent]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickEvaluationYear]]>
+            </line>
+            <line>
+              <![CDATA[Method: isTopicsPresent]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickTopics]]>
+            </line>
+            <line>
+              <![CDATA[Method: isDocumentsPresent]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickDocuments]]>
+            </line>
+            <line>
+              <![CDATA[Method: isDomainsPresent]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: isHistoryPresent]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickHistory]]>
+            </line>
           </reporter-output>
         </test-method> <!-- leftMenusSmoke -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@6d60fe40]" started-at="2023-05-18T16:03:12 EDT" name="afterMethod" finished-at="2023-05-18T16:03:14 EDT" duration-ms="1373" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8]" started-at="2023-05-24T11:52:36 EDT" name="afterMethod" finished-at="2023-05-24T11:52:36 EDT" duration-ms="318" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=leftMenusSmoke status=SUCCESS method=LeftMenusSmoke.leftMenusSmoke()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@6d60fe40] output=Beginning Login Modular Test...]]]>
+                <![CDATA[[TestResult name=leftMenusSmoke status=SUCCESS method=LeftMenusSmoke.leftMenusSmoke()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8] output=Beginning Login Modular Test...]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@6d60fe40]" started-at="2023-05-18T16:03:14 EDT" name="afterClass" finished-at="2023-05-18T16:03:14 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8]" started-at="2023-05-24T11:52:36 EDT" name="afterClass" finished-at="2023-05-24T11:52:36 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testCases.SmokeTests.LeftMenusSmoke -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Smoke Test - Left Menus -->
+  </suite> <!-- Entire Suite -->
 </testng-results>
