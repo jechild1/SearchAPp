@@ -69,6 +69,44 @@ public class LoginPageFactory extends diSearchBase {
 	 * Clicks the login button
 	 */
 	public void clickLogin() {
+		AutomationHelper.printMethodName();
 		loginButton.click();
 	}
+
+	@FindBy(xpath = "//div[text()= 'Continue with Google']")
+	WebElement googleLoginButton;
+
+	/**
+	 * Clicks the Google login button
+	 */
+	public void clickGoogleLogin() {
+		AutomationHelper.printMethodName();
+		googleLoginButton.click();
+	}
+
+	@FindBy(id = "identifierId")
+	WebElement emailOrPhoneField;
+
+	/**
+	 * Sets the Email or Phone field on the Google Sign On prompt.
+	 * 
+	 * @param emailOrPhone
+	 */
+	public void setGoogleIdentifierID(String emailOrPhone) {
+		AutomationHelper.printMethodName();
+		AutomationHelper.setTextField(emailOrPhoneField, emailOrPhone);
+	}
+
+	@FindBy(xpath = "//span[text() = 'Next']")
+	WebElement nextButton;
+
+	/**
+	 * Clicks the Next button on the Google Signon.
+	 */
+	public void clickNextButton() {
+		AutomationHelper.printMethodName();
+		nextButton.click();
+	}
+	
+	
 }
