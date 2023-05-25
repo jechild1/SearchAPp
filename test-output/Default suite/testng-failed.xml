@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.SmokeTests.LeftMenusSmoke">
+      <class name="testCases.SmokeTests.SettingsMenuSmoke">
         <methods>
           <include name="afterClass"/>
-          <include name="leftMenusSmoke"/>
+          <include name="TopMenusSmokeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.SmokeTests.LeftMenusSmoke -->
+      </class> <!-- testCases.SmokeTests.SettingsMenuSmoke -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
