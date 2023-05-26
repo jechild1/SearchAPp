@@ -30,7 +30,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 
 		// TODO: Remove this code when defect AS-182 is corrected, to where things load
 		// twice
-		AutomationHelper.waitSeconds(3);
+		AutomationHelper.waitSeconds(1);
 
 	}
 
