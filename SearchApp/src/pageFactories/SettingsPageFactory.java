@@ -7,7 +7,7 @@ package pageFactories;
  * @author Jesse Childress
  *
  */
-public class SettingsPageFactory extends diSearchMenusPageFactory {
+public class SettingsPageFactory extends diSettingsMenusPageFactory {
 	
 	public static String regexURL = BASE_URL + "settings";
 	
