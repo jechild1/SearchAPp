@@ -1,5 +1,7 @@
 package pageFactories;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +27,27 @@ public abstract class diSearchBase extends SearchConfig {
 	 */
 	public UploadDocuments getUploadDocuments() {
 		return new UploadDocuments();
+	}
+	
+	/**
+	 * Private utility method that checks for the presence of a WebElement by a
+	 * passed in XPATH.
+	 * 
+	 * @param xPath
+	 * @return
+	 */
+	protected boolean isWebElementPresent(String xPath) {
+
+		// Long startTime = System.currentTimeMillis();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		boolean isElementPresent = driver.findElements(By.xpath(xPath)).size() > 0;
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+		// Long endTime = System.currentTimeMillis();
+
+		// System.out.println("Time for check for xpath " + xPath + ": " + (endTime -
+		// startTime) / 1000);
+
+		return isElementPresent;
 	}
 
 	/**
