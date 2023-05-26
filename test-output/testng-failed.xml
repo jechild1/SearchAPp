@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="classes" name="Failed suite [Entire Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="selectedBrowser" value="chrome"/>
-  <test thread-count="1" parallel="classes" name="Smoke Test - Left Menus(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.SmokeTests.LeftMenusSmoke">
+      <class name="testCases.Search">
         <methods>
           <include name="afterClass"/>
-          <include name="leftMenusSmoke"/>
+          <include name="loginSmokeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.SmokeTests.LeftMenusSmoke -->
+      </class> <!-- testCases.Search -->
     </classes>
-  </test> <!-- Smoke Test - Left Menus(failed) -->
-</suite> <!-- Failed suite [Entire Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

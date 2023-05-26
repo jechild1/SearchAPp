@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Beginning Login Smoke Test...]]>
+      <![CDATA[Beginning test for simple search...]]>
     </line>
     <line>
       <![CDATA[Beginning Login Modular Test...]]>
@@ -42,63 +42,6 @@
     </line>
     <line>
       <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
-    </line>
-    <line>
-      <![CDATA[Beginning Login Modular Test...]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page '' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Method: setEmail]]>
-    </line>
-    <line>
-      <![CDATA[Method: setPassword]]>
-    </line>
-    <line>
-      <![CDATA[Method: readEmail]]>
-    </line>
-    <line>
-      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
-    </line>
-    <line>
-      <![CDATA[Method: readEmail]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickLogin]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page '' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
-    </line>
-    <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
-    </line>
-    <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickAllDomainsButton]]>
-    </line>
-    <line>
-      <![CDATA[Method: openClosedDomains]]>
     </line>
     <line>
       <![CDATA[Beginning Search Modular Test...
@@ -123,7 +66,71 @@ This is for the main search page from login...]]>
       <![CDATA[Method: clickAllDomainsButton]]>
     </line>
     <line>
-      <![CDATA[All Domains Button already clicked. Menus already present on page.]]>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
     </line>
     <line>
       <![CDATA[Method: openClosedDomains]]>
@@ -147,7 +154,7 @@ This is for the main search page from login...]]>
       <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=What%20can%20Aretec%20help%20me%20do?%20Give%20me%20a%20bulleted%20list]]>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -156,37 +163,13 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Method: isSearchResultsPresent]]>
+      <![CDATA[Method: readAnswer]]>
     </line>
     <line>
-      <![CDATA[Method: isEvaluationYearPresent]]>
+      <![CDATA[Method: waitForAnswerGeneration]]>
     </line>
     <line>
-      <![CDATA[Method: clickEvaluationYear]]>
-    </line>
-    <line>
-      <![CDATA[Method: isTopicsPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickTopics]]>
-    </line>
-    <line>
-      <![CDATA[Method: isDocumentsPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickDocuments]]>
-    </line>
-    <line>
-      <![CDATA[Method: isDomainsPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickDomains]]>
-    </line>
-    <line>
-      <![CDATA[Method: isHistoryPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickHistory]]>
+      <![CDATA[Beginning test for simple search...]]>
     </line>
     <line>
       <![CDATA[Beginning Login Modular Test...]]>
@@ -228,49 +211,8 @@ This is for the main search page from login...]]>
       <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
     </line>
     <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
-    </line>
-    <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
-    </line>
-    <line>
-      <![CDATA[Method: isHomeLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isDocumentsTopLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isAboutLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isSettingsLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isLogoutLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickDocumentsTopLink]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/documents]]>
-    </line>
-    <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/documents]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickHomeTopLink]]>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -285,7 +227,22 @@ This is for the main search page from login...]]>
       <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
     </line>
     <line>
-      <![CDATA[Method: clickSettings]]>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -294,10 +251,10 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -306,7 +263,16 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Method: clickLogout]]>
+      <![CDATA[Method: readAnswer]]>
+    </line>
+    <line>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Waited on Answer text for: 12 seconds.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
     </line>
     <line>
       <![CDATA[Beginning Login Modular Test...]]>
@@ -348,6 +314,10 @@ This is for the main search page from login...]]>
       <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
     </line>
     <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+    </line>
+    <line>
       <![CDATA[Waiting for page to load completely...]]>
     </line>
     <line>
@@ -360,7 +330,22 @@ This is for the main search page from login...]]>
       <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
     </line>
     <line>
-      <![CDATA[Method: clickSettings]]>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -369,31 +354,10 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Method: isSettingsLeftLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isDataDomainsLeftLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isMembersLeftLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: isBillingLeftLinkPresent]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickDataDomainsLeftLink]]>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -402,10 +366,59 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Method: readAnswer]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Waited on Answer text for: 11 seconds.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -414,34 +427,28 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Method: readPageHeader]]>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
     </line>
     <line>
-      <![CDATA[Method: clickSettingsLeftLink]]>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
     </line>
     <line>
-      <![CDATA[Waiting for page to load completely...]]>
+      <![CDATA[Method: selectDomain]]>
     </line>
     <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
+      <![CDATA[Method: clickAllDomainsButton]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Method: openClosedDomains]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Method: setSearchField]]>
     </line>
     <line>
-      <![CDATA[Waiting for page to load completely...]]>
+      <![CDATA[Method: readSearchField]]>
     </line>
     <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Method: readPageHeader]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickMembersLeftLink]]>
+      <![CDATA[Method: setAPIDefault]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -450,22 +457,10 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Method: readPageHeader]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickBillingLeftLink]]>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -474,10 +469,59 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Method: readAnswer]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Waited on Answer text for: 13 seconds.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -486,21 +530,510 @@ This is for the main search page from login...]]>
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Method: readPageHeader]]>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
     </line>
     <line>
-      <![CDATA[Method: clickLogout]]>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: readAnswer]]>
+    </line>
+    <line>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Waited on Answer text for: 4 seconds.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: readAnswer]]>
+    </line>
+    <line>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Waited on Answer text for: 7 seconds.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: readAnswer]]>
+    </line>
+    <line>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
+    </line>
+    <line>
+      <![CDATA[Method: setSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: readSearchField]]>
+    </line>
+    <line>
+      <![CDATA[Method: setAPIDefault]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: readAnswer]]>
+    </line>
+    <line>
+      <![CDATA[Method: waitForAnswerGeneration]]>
+    </line>
+    <line>
+      <![CDATA[Waited on Answer text for: 4 seconds.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning test for simple search...]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Login Modular Test...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Method: setEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: setPassword]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+    </line>
+    <line>
+      <![CDATA[Method: readEmail]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickLogin]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page '' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+    </line>
+    <line>
+      <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+    </line>
+    <line>
+      <![CDATA[Method: selectDomain]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickAllDomainsButton]]>
+    </line>
+    <line>
+      <![CDATA[Method: openClosedDomains]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-25T14:35:08 EDT" name="Entire Suite" finished-at="2023-05-25T14:35:47 EDT" duration-ms="38509">
+  <suite started-at="2023-05-26T12:14:35 EDT" name="Default suite" finished-at="2023-05-26T12:19:45 EDT" duration-ms="310464">
     <groups>
     </groups>
-    <test started-at="2023-05-25T14:35:08 EDT" name="Smoke Test - Generic Login" finished-at="2023-05-25T14:35:14 EDT" duration-ms="6081">
-      <class name="testCases.SmokeTests.LoginSmoke">
-        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a]" started-at="2023-05-25T14:35:08 EDT" name="loginSmokeTest" finished-at="2023-05-25T14:35:14 EDT" duration-ms="5802" status="PASS">
+    <test started-at="2023-05-26T12:14:35 EDT" name="Default test" finished-at="2023-05-26T12:19:45 EDT" duration-ms="310464">
+      <class name="testCases.Search">
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:14:35 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:14:46 EDT" duration-ms="11539" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="ant-tree-switcher ant-tree-switcher_close">...</span> is not clickable at point (471, 669). Other element would receive the click: <svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true">...</svg>
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1482af483f37a36e8546452f256eb1fa, clickElement {id=C7C5BA563982DA1D629F86A480E119C1_element_103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58152/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1482af483f37a36e8546452f256eb1fa)] -> xpath: //span[@class = 'ant-tree-switcher ant-tree-switcher_close']]
+Session ID: 1482af483f37a36e8546452f256eb1fa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="ant-tree-switcher ant-tree-switcher_close">...</span> is not clickable at point (471, 669). Other element would receive the click: <svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true">...</svg>
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1482af483f37a36e8546452f256eb1fa, clickElement {id=C7C5BA563982DA1D629F86A480E119C1_element_103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58152/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1482af483f37a36e8546452f256eb1fa)] -> xpath: //span[@class = 'ant-tree-switcher ant-tree-switcher_close']]
+Session ID: 1482af483f37a36e8546452f256eb1fa
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pageFactories.SearchPageFactory.openClosedDomains(SearchPageFactory.java:352)
+at pageFactories.SearchPageFactory.selectDomain(SearchPageFactory.java:213)
+at testCases.ModularTests.SearchMod.search(SearchMod.java:98)
+at testCases.Search.loginSmokeTest(Search.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
             <line>
-              <![CDATA[Beginning Login Smoke Test...]]>
+              <![CDATA[Beginning test for simple search...]]>
             </line>
             <line>
               <![CDATA[Beginning Login Modular Test...]]>
@@ -540,86 +1073,6 @@ This is for the main search page from login...]]>
             </line>
             <line>
               <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginSmokeTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a]" started-at="2023-05-25T14:35:14 EDT" name="afterMethod" finished-at="2023-05-25T14:35:14 EDT" duration-ms="204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=LoginSmoke.loginSmokeTest()[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a] output=Beginning Login Smoke Test...]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.LoginSmoke@1033576a]" started-at="2023-05-25T14:35:14 EDT" name="afterClass" finished-at="2023-05-25T14:35:14 EDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testCases.SmokeTests.LoginSmoke -->
-    </test> <!-- Smoke Test - Generic Login -->
-    <test started-at="2023-05-25T14:35:14 EDT" name="Smoke Test - Left Menus" finished-at="2023-05-25T14:35:29 EDT" duration-ms="14716">
-      <class name="testCases.SmokeTests.LeftMenusSmoke">
-        <test-method signature="leftMenusSmoke()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8]" started-at="2023-05-25T14:35:14 EDT" name="leftMenusSmoke" finished-at="2023-05-25T14:35:29 EDT" duration-ms="14410" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Beginning Login Modular Test...]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page '' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: setEmail]]>
-            </line>
-            <line>
-              <![CDATA[Method: setPassword]]>
-            </line>
-            <line>
-              <![CDATA[Method: readEmail]]>
-            </line>
-            <line>
-              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
-            </line>
-            <line>
-              <![CDATA[Method: readEmail]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickLogin]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page '' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickAllDomainsButton]]>
-            </line>
-            <line>
-              <![CDATA[Method: openClosedDomains]]>
             </line>
             <line>
               <![CDATA[Beginning Search Modular Test...
@@ -644,7 +1097,158 @@ This is for the main search page from login...]]>
               <![CDATA[Method: clickAllDomainsButton]]>
             </line>
             <line>
-              <![CDATA[All Domains Button already clicked. Menus already present on page.]]>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:14:46 EDT" name="afterMethod" finished-at="2023-05-26T12:14:47 EDT" duration-ms="775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=FAILURE method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:14:47 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:15:18 EDT" duration-ms="30749" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class = 'content mgBt_10 bullet']/p"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a495a678c8ea12283ab20322db884f7c, findElement {using=xpath, value=//div[@class = 'content mgBt_10 bullet']/p}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58177/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a495a678c8ea12283ab20322db884f7c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class = 'content mgBt_10 bullet']/p"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a495a678c8ea12283ab20322db884f7c, findElement {using=xpath, value=//div[@class = 'content mgBt_10 bullet']/p}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58177/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a495a678c8ea12283ab20322db884f7c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at pageFactories.SearchResultsPageFactory.waitForAnswerGeneration(SearchResultsPageFactory.java:47)
+at pageFactories.SearchResultsPageFactory.readAnswer(SearchResultsPageFactory.java:85)
+at testCases.Search.loginSmokeTest(Search.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
             </line>
             <line>
               <![CDATA[Method: openClosedDomains]]>
@@ -668,7 +1272,7 @@ This is for the main search page from login...]]>
               <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
             </line>
             <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=What%20can%20Aretec%20help%20me%20do?%20Give%20me%20a%20bulleted%20list]]>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -677,61 +1281,29 @@ This is for the main search page from login...]]>
               <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Method: isSearchResultsPresent]]>
+              <![CDATA[Method: readAnswer]]>
             </line>
             <line>
-              <![CDATA[Method: isEvaluationYearPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickEvaluationYear]]>
-            </line>
-            <line>
-              <![CDATA[Method: isTopicsPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickTopics]]>
-            </line>
-            <line>
-              <![CDATA[Method: isDocumentsPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickDocuments]]>
-            </line>
-            <line>
-              <![CDATA[Method: isDomainsPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickDomains]]>
-            </line>
-            <line>
-              <![CDATA[Method: isHistoryPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickHistory]]>
+              <![CDATA[Method: waitForAnswerGeneration]]>
             </line>
           </reporter-output>
-        </test-method> <!-- leftMenusSmoke -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8]" started-at="2023-05-25T14:35:29 EDT" name="afterMethod" finished-at="2023-05-25T14:35:29 EDT" duration-ms="303" status="PASS">
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:15:18 EDT" name="afterMethod" finished-at="2023-05-26T12:15:18 EDT" duration-ms="582" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=leftMenusSmoke status=SUCCESS method=LeftMenusSmoke.leftMenusSmoke()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8] output=Beginning Login Modular Test...]]]>
+                <![CDATA[[TestResult name=loginSmokeTest status=FAILURE method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.LeftMenusSmoke@4b520ea8]" started-at="2023-05-25T14:35:29 EDT" name="afterClass" finished-at="2023-05-25T14:35:29 EDT" duration-ms="0" status="PASS">
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:15:18 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:15:58 EDT" duration-ms="39499" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testCases.SmokeTests.LeftMenusSmoke -->
-    </test> <!-- Smoke Test - Left Menus -->
-    <test started-at="2023-05-25T14:35:29 EDT" name="Smoke Test - Top Menus" finished-at="2023-05-25T14:35:39 EDT" duration-ms="9971">
-      <class name="testCases.SmokeTests.TopMenusSmoke">
-        <test-method signature="TopMenusSmokeTest()[pri:0, instance:testCases.SmokeTests.TopMenusSmoke@782859e]" started-at="2023-05-25T14:35:29 EDT" name="TopMenusSmokeTest" finished-at="2023-05-25T14:35:39 EDT" duration-ms="9712" status="PASS">
-          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
             <line>
               <![CDATA[Beginning Login Modular Test...]]>
             </line>
@@ -772,49 +1344,8 @@ This is for the main search page from login...]]>
               <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
             </line>
             <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
-            </line>
-            <line>
-              <![CDATA[Method: isHomeLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isDocumentsTopLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isAboutLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isSettingsLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isLogoutLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickDocumentsTopLink]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/documents]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/documents]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickHomeTopLink]]>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -829,7 +1360,22 @@ This is for the main search page from login...]]>
               <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
             </line>
             <line>
-              <![CDATA[Method: clickSettings]]>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -838,10 +1384,10 @@ This is for the main search page from login...]]>
               <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
             </line>
             <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -850,31 +1396,32 @@ This is for the main search page from login...]]>
               <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Method: clickLogout]]>
+              <![CDATA[Method: readAnswer]]>
+            </line>
+            <line>
+              <![CDATA[Method: waitForAnswerGeneration]]>
+            </line>
+            <line>
+              <![CDATA[Waited on Answer text for: 12 seconds.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TopMenusSmokeTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.TopMenusSmoke@782859e]" started-at="2023-05-25T14:35:39 EDT" name="afterMethod" finished-at="2023-05-25T14:35:39 EDT" duration-ms="255" status="PASS">
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:15:58 EDT" name="afterMethod" finished-at="2023-05-26T12:15:58 EDT" duration-ms="373" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TopMenusSmokeTest status=SUCCESS method=TopMenusSmoke.TopMenusSmokeTest()[pri:0, instance:testCases.SmokeTests.TopMenusSmoke@782859e] output=Beginning Login Modular Test...]]]>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.TopMenusSmoke@782859e]" started-at="2023-05-25T14:35:39 EDT" name="afterClass" finished-at="2023-05-25T14:35:39 EDT" duration-ms="0" status="PASS">
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:15:58 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:16:39 EDT" duration-ms="40428" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testCases.SmokeTests.TopMenusSmoke -->
-    </test> <!-- Smoke Test - Top Menus -->
-    <test started-at="2023-05-25T14:35:39 EDT" name="Smoke Test - Settings Menus" finished-at="2023-05-25T14:35:47 EDT" duration-ms="7715">
-      <class name="testCases.SmokeTests.SettingsMenusSmoke">
-        <test-method signature="TopMenusSmokeTest()[pri:0, instance:testCases.SmokeTests.SettingsMenusSmoke@5db6b9cd]" started-at="2023-05-25T14:35:39 EDT" name="TopMenusSmokeTest" finished-at="2023-05-25T14:35:47 EDT" duration-ms="7466" status="PASS">
-          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
             <line>
               <![CDATA[Beginning Login Modular Test...]]>
             </line>
@@ -915,6 +1462,10 @@ This is for the main search page from login...]]>
               <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
             </line>
             <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
               <![CDATA[Waiting for page to load completely...]]>
             </line>
             <line>
@@ -927,7 +1478,22 @@ This is for the main search page from login...]]>
               <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
             </line>
             <line>
-              <![CDATA[Method: clickSettings]]>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -936,31 +1502,10 @@ This is for the main search page from login...]]>
               <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
             </line>
             <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: isSettingsLeftLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isDataDomainsLeftLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isMembersLeftLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: isBillingLeftLinkPresent]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickDataDomainsLeftLink]]>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -969,113 +1514,844 @@ This is for the main search page from login...]]>
               <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+              <![CDATA[Method: readAnswer]]>
             </line>
             <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
+              <![CDATA[Method: waitForAnswerGeneration]]>
             </line>
             <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: readPageHeader]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickSettingsLeftLink]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: readPageHeader]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickMembersLeftLink]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: readPageHeader]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickBillingLeftLink]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/settings]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: readPageHeader]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickLogout]]>
+              <![CDATA[Waited on Answer text for: 11 seconds.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TopMenusSmokeTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.SmokeTests.SettingsMenusSmoke@5db6b9cd]" started-at="2023-05-25T14:35:47 EDT" name="afterMethod" finished-at="2023-05-25T14:35:47 EDT" duration-ms="247" status="PASS">
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:16:39 EDT" name="afterMethod" finished-at="2023-05-26T12:16:39 EDT" duration-ms="358" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TopMenusSmokeTest status=SUCCESS method=SettingsMenusSmoke.TopMenusSmokeTest()[pri:0, instance:testCases.SmokeTests.SettingsMenusSmoke@5db6b9cd] output=Beginning Login Modular Test...]]]>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.SmokeTests.SettingsMenusSmoke@5db6b9cd]" started-at="2023-05-25T14:35:47 EDT" name="afterClass" finished-at="2023-05-25T14:35:47 EDT" duration-ms="0" status="PASS">
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:16:39 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:17:20 EDT" duration-ms="41336" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: readAnswer]]>
+            </line>
+            <line>
+              <![CDATA[Method: waitForAnswerGeneration]]>
+            </line>
+            <line>
+              <![CDATA[Waited on Answer text for: 13 seconds.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:17:20 EDT" name="afterMethod" finished-at="2023-05-26T12:17:21 EDT" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:17:21 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:17:52 EDT" duration-ms="30910" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: readAnswer]]>
+            </line>
+            <line>
+              <![CDATA[Method: waitForAnswerGeneration]]>
+            </line>
+            <line>
+              <![CDATA[Waited on Answer text for: 4 seconds.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:17:52 EDT" name="afterMethod" finished-at="2023-05-26T12:17:52 EDT" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:17:52 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:18:27 EDT" duration-ms="34901" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: readAnswer]]>
+            </line>
+            <line>
+              <![CDATA[Method: waitForAnswerGeneration]]>
+            </line>
+            <line>
+              <![CDATA[Waited on Answer text for: 7 seconds.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:18:27 EDT" name="afterMethod" finished-at="2023-05-26T12:18:27 EDT" duration-ms="422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:18:27 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:18:58 EDT" duration-ms="31017" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class = 'content mgBt_10 bullet']/p"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [58dc58325a0a0a96f64f76cf5fe6348c, findElement {using=xpath, value=//div[@class = 'content mgBt_10 bullet']/p}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58347/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 58dc58325a0a0a96f64f76cf5fe6348c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class = 'content mgBt_10 bullet']/p"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [58dc58325a0a0a96f64f76cf5fe6348c, findElement {using=xpath, value=//div[@class = 'content mgBt_10 bullet']/p}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58347/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 58dc58325a0a0a96f64f76cf5fe6348c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at pageFactories.SearchResultsPageFactory.waitForAnswerGeneration(SearchResultsPageFactory.java:47)
+at pageFactories.SearchResultsPageFactory.readAnswer(SearchResultsPageFactory.java:85)
+at testCases.Search.loginSmokeTest(Search.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: readAnswer]]>
+            </line>
+            <line>
+              <![CDATA[Method: waitForAnswerGeneration]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:18:58 EDT" name="afterMethod" finished-at="2023-05-26T12:18:59 EDT" duration-ms="849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=FAILURE method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:18:59 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:19:35 EDT" duration-ms="35828" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+            <line>
+              <![CDATA[Method: setSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: readSearchField]]>
+            </line>
+            <line>
+              <![CDATA[Method: setAPIDefault]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/search-result.*]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/search-result?search=How%20can%20Aretec%20save%20money%20on%20taxes?]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: readAnswer]]>
+            </line>
+            <line>
+              <![CDATA[Method: waitForAnswerGeneration]]>
+            </line>
+            <line>
+              <![CDATA[Waited on Answer text for: 4 seconds.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:19:35 EDT" name="afterMethod" finished-at="2023-05-26T12:19:35 EDT" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=SUCCESS method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:19:35 EDT" name="loginSmokeTest" finished-at="2023-05-26T12:19:44 EDT" duration-ms="8912" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="ant-tree-switcher ant-tree-switcher_close">...</span> is not clickable at point (471, 641). Other element would receive the click: <span class="ant-tree-switcher ant-tree-switcher-noop"></span>
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [256385a1261415ac4c6857fbcbb56f3a, clickElement {id=587C7D5D2A864DA96F963A890B44BAC7_element_98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58504/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (256385a1261415ac4c6857fbcbb56f3a)] -> xpath: //span[@class = 'ant-tree-switcher ant-tree-switcher_close']]
+Session ID: 256385a1261415ac4c6857fbcbb56f3a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="ant-tree-switcher ant-tree-switcher_close">...</span> is not clickable at point (471, 641). Other element would receive the click: <span class="ant-tree-switcher ant-tree-switcher-noop"></span>
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [256385a1261415ac4c6857fbcbb56f3a, clickElement {id=587C7D5D2A864DA96F963A890B44BAC7_element_98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58504/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (256385a1261415ac4c6857fbcbb56f3a)] -> xpath: //span[@class = 'ant-tree-switcher ant-tree-switcher_close']]
+Session ID: 256385a1261415ac4c6857fbcbb56f3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pageFactories.SearchPageFactory.openClosedDomains(SearchPageFactory.java:352)
+at pageFactories.SearchPageFactory.selectDomain(SearchPageFactory.java:213)
+at testCases.ModularTests.SearchMod.search(SearchMod.java:98)
+at testCases.Search.loginSmokeTest(Search.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Beginning test for simple search...]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Login Modular Test...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Method: setEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: setPassword]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Email Address: jesse.childress@aretecinc.com]]>
+            </line>
+            <line>
+              <![CDATA[Method: readEmail]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickLogin]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page '' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/login]]>
+            </line>
+            <line>
+              <![CDATA[Beginning Search Modular Test...
+This is for the main search page from login...]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Expected URL: https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Current URL : https://test-search-2my7afm7yq-ue.a.run.app/]]>
+            </line>
+            <line>
+              <![CDATA[Method: selectDomain]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickAllDomainsButton]]>
+            </line>
+            <line>
+              <![CDATA[Method: openClosedDomains]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSmokeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:19:44 EDT" name="afterMethod" finished-at="2023-05-26T12:19:45 EDT" duration-ms="714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSmokeTest status=FAILURE method=Search.loginSmokeTest()[pri:0, instance:testCases.Search@43df23d3] output=Beginning test for simple search...]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Search@43df23d3]" started-at="2023-05-26T12:19:45 EDT" name="afterClass" finished-at="2023-05-26T12:19:45 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.SmokeTests.SettingsMenusSmoke -->
-    </test> <!-- Smoke Test - Settings Menus -->
-  </suite> <!-- Entire Suite -->
+      </class> <!-- testCases.Search -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
