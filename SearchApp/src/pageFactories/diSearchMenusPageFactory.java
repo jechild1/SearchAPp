@@ -1,11 +1,11 @@
 package pageFactories;
 
-import static org.testng.Assert.assertTrue;
-
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -45,8 +45,6 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		Reporter.log("Expected URL: " + regexURL, true);
 		Reporter.log("Current URL : " + this.getCurrentUrl(), true);
 
-//		assertTrue(this.getCurrentUrl().matches(regexURL), "Validate URL Changed to " + regexURL);
-
 	}
 
 	@FindBy(xpath = "//div[@class='flex-row display-flex header-title-div']/p[text()='Home']")
@@ -60,6 +58,16 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		homeLink.click();
 	}
 
+	/**
+	 * Returns a boolean to if the <b>Home Link</b> is present.
+	 * 
+	 * @return boolean
+	 */
+	public boolean isHomeLinkPresent() {
+		AutomationHelper.printMethodName();
+		return isWebElementPresent("//div[@class='flex-row display-flex header-title-div']/p[text()='Home']");
+	}
+
 	@FindBy(xpath = "//div[@class='flex-row display-flex header-title-div']/p[text()='Documents']")
 	WebElement documentsLinkTopMenu;
 
@@ -69,6 +77,17 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	public void clickDocumentsTopLink() {
 		AutomationHelper.printMethodName();
 		documentsLinkTopMenu.click();
+	}
+
+	/**
+	 * Returns a boolean to if the <b>Document(s)</b> is present. This is for the
+	 * top link
+	 * 
+	 * @return boolean
+	 */
+	public boolean isDocumentsTopLinkPresent() {
+		AutomationHelper.printMethodName();
+		return isWebElementPresent("//div[@class='flex-row display-flex header-title-div']/p[text()='Documents']");
 	}
 
 	@FindBy(xpath = "//div[@class='flex-row display-flex header-title-div']/p[text()='About']")
@@ -82,11 +101,50 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		aboutLink.click();
 	}
 
+	/**
+	 * Returns a boolean to if the <b>About</b> is present. This is for the top link
+	 * 
+	 * @return boolean
+	 */
+	public boolean isAboutLinkPresent() {
+		AutomationHelper.printMethodName();
+		return isWebElementPresent("//div[@class='flex-row display-flex header-title-div']/p[text()='About']");
+	}
+
 	// This is the icon of the person where the Settings and Logout are present
 	// The OR in the xpath is because the object type changes inside the settings
 	// menus.
-	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'] | //p[@class='ant-dropdown-trigger header-title active-header']")
-	WebElement settingsMenu;
+	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
+	WebElement profileMenu;
+
+	/**
+	 * Clicks the Profile Menu
+	 */
+	public void clickProfileMenu() {
+
+		// We must see if the profile menu is already open before we click it.
+
+		// Try to get a reference to the expanded menu
+		// Wait for the Sub-menu to appear
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
+
+		// If this xpath is found, it means that the menu is already open and we will
+		// not need to perform the click
+		String subMenuContainerXpath = "//div[@class = 'ant-dropdown ant-dropdown-show-arrow ant-dropdown-placement-bottomRight']";
+		List<WebElement> subMenuElements = driver.findElements(By.xpath(subMenuContainerXpath));
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+
+		// If there is a hidden menu found, the size will be 1, and this will evaluate
+		// to true, and the click will happen in the IF statement.
+		boolean clickNeeded = subMenuElements.size() > 0;
+
+		// If click is NOT needed
+		if (!clickNeeded) {
+			profileMenu.click();
+		}
+
+	}
 
 	/**
 	 * Click the Settings menu
@@ -94,7 +152,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	public void clickSettings() {
 		AutomationHelper.printMethodName();
 
-		settingsMenu.click();
+		clickProfileMenu();
 
 		// Wait for the Sub-menu to appear
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
@@ -109,12 +167,32 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	}
 
 	/**
+	 * Returns a boolean to if the <b>Settings</b> is present. This is for the top
+	 * menu and under the person icon
+	 * 
+	 * @return boolean
+	 */
+	public boolean isSettingsLinkPresent() {
+		AutomationHelper.printMethodName();
+
+		clickProfileMenu();
+
+		// Wait for the Sub-menu to appear
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
+
+		String settingsXpath = "//p[text()='Settings']";
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(settingsXpath)));
+
+		return isWebElementPresent(settingsXpath);
+	}
+
+	/**
 	 * Click the Logout menu
 	 */
 	public void clickLogout() {
 		AutomationHelper.printMethodName();
 
-		settingsMenu.click();
+		clickProfileMenu();
 
 		// Wait for the Sub-menu to appear
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
@@ -126,6 +204,26 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		WebElement logoutLink = driver.findElement(By.xpath(logoutXpath));
 
 		logoutLink.click();
+	}
+
+	/**
+	 * Returns a boolean to if the <b>Settings</b> is present. This is for the top
+	 * menu and under the person icon
+	 * 
+	 * @return boolean
+	 */
+	public boolean isLogoutLinkPresent() {
+		AutomationHelper.printMethodName();
+
+		clickProfileMenu();
+
+		// Wait for the Sub-menu to appear
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
+
+		String logoutXpath = "//p[contains(text(),'Logout')]";
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(logoutXpath)));
+
+		return isWebElementPresent(logoutXpath);
 	}
 
 	/*
@@ -176,6 +274,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement evaluationYearLink = driver.findElement(By.xpath(xpathEvaluationYearLink));
+			
+			// Because elements consistently move as they're being expanded, we must move to
+			// it as to not have click interceptions.
+			moveToElement(evaluationYear);
+			
 			evaluationYearLink.click();
 		}
 	}
@@ -189,7 +292,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		AutomationHelper.printMethodName();
 		return isWebElementPresent(xpathTopicsLink);
 	}
-	
+
 	/**
 	 * Clicks the <b>TOPICS</b> left hand link to display the sub-objects
 	 */
@@ -206,8 +309,19 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement topicsLink = driver.findElement(By.xpath(xpathTopicsLink));
+
+			// Because elements consistently move as they're being expanded, we must move to
+			// it as to not have click interceptions.
+			moveToElement(topicsLink);
+
 			topicsLink.click();
 		}
+	}
+
+	private void moveToElement(WebElement elementToMoveTo) {
+//		WebElement element = driver.findElement(By.id("header-account"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(elementToMoveTo).click().build().perform();
 	}
 
 	/**
@@ -219,7 +333,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		AutomationHelper.printMethodName();
 		return isWebElementPresent(xpathDocumentsLink);
 	}
-	
+
 	/**
 	 * Clicks the <b>DOCUMENTS</b> left hand link to display the sub-objects
 	 */
@@ -236,6 +350,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement documentsLink = driver.findElement(By.xpath(xpathDocumentsLink));
+			
+			// Because elements consistently move as they're being expanded, we must move to
+			// it as to not have click interceptions.
+			moveToElement(documentsLink);
+			
 			documentsLink.click();
 		}
 	}
@@ -249,7 +368,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		AutomationHelper.printMethodName();
 		return isWebElementPresent(xpathDomainsLink);
 	}
-	
+
 	/**
 	 * Clicks the <b>DOMAIN(S)</b> left hand link to display the sub-objects
 	 */
@@ -266,6 +385,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement domainsLink = driver.findElement(By.xpath(xpathDomainsLink));
+			
+			// Because elements consistently move as they're being expanded, we must move to
+			// it as to not have click interceptions.
+			moveToElement(domainsLink);
+			
 			domainsLink.click();
 		}
 	}
@@ -279,7 +403,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		AutomationHelper.printMethodName();
 		return isWebElementPresent(xpathHistoryLink);
 	}
-	
+
 	/**
 	 * Clicks the <b>HISTORY</b> left hand link to display the sub-objects
 	 */
@@ -296,29 +420,13 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement historyLink = driver.findElement(By.xpath(xpathHistoryLink));
+			
+			// Because elements consistently move as they're being expanded, we must move to
+			// it as to not have click interceptions.
+			moveToElement(historyLink);
+			
 			historyLink.click();
 		}
-	}
-
-	/**
-	 * Private utility method that checks for the presence of a WebElement by a
-	 * passed in XPATH.
-	 * 
-	 * @param xPath
-	 * @return
-	 */
-	private boolean isWebElementPresent(String xPath) {
-
-//		Long startTime = System.currentTimeMillis();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-		boolean isElementPresent = driver.findElements(By.xpath(xPath)).size() > 0;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
-//		Long endTime = System.currentTimeMillis();
-
-		// System.out.println("Time for check for xpath " + xPath + ": " + (endTime -
-		// startTime) / 1000);
-
-		return isElementPresent;
 	}
 
 	public SearchResults getSearchResults() {
