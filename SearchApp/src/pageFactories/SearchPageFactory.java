@@ -87,47 +87,47 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		AutomationHelper.hitEnter(searchField);
 	}
 
-	/**
-	 * Sets the the Default API as search criteria. If
-	 */
-	public void setAPIDefault(boolean desiredStatus) {
-		AutomationHelper.printMethodName();
+//	/**
+//	 * Sets the the Default API as search criteria. If
+//	 */
+//	public void setAPIDefault(boolean desiredStatus) {
+//		AutomationHelper.printMethodName();
+//
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+//		boolean objectSelected = driver.findElements(By.xpath("//button//span[text()='Default']")).size() > 0;
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+//
+//		if ((desiredStatus == false) && (objectSelected == true)) {
+//			// Click the Default button to change it to LFQA
+//			WebElement defaultAPIButton = driver.findElement(By.xpath("//button//span[text()='Default']"));
+//			defaultAPIButton.click();
+//		} else if ((desiredStatus == true) && (objectSelected == false)) {
+//			// Click on the LFQA button to change it to Default
+//			WebElement lfqaAPIButton = driver.findElement(By.xpath("//button//span[text()='LFQA']"));
+//			lfqaAPIButton.click();
+//		}
+//	}
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-		boolean objectSelected = driver.findElements(By.xpath("//button//span[text()='Default']")).size() > 0;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
-
-		if ((desiredStatus == false) && (objectSelected == true)) {
-			// Click the Default button to change it to LFQA
-			WebElement defaultAPIButton = driver.findElement(By.xpath("//button//span[text()='Default']"));
-			defaultAPIButton.click();
-		} else if ((desiredStatus == true) && (objectSelected == false)) {
-			// Click on the LFQA button to change it to Default
-			WebElement lfqaAPIButton = driver.findElement(By.xpath("//button//span[text()='LFQA']"));
-			lfqaAPIButton.click();
-		}
-	}
-
-	/**
-	 * Sets the LFQA API as search criteria. If
-	 */
-	public void setLFQADefault(boolean desiredStatus) {
-		AutomationHelper.printMethodName();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-		boolean objectSelected = driver.findElements(By.xpath("//button//span[text()='LFQA']")).size() > 0;
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
-
-		if ((desiredStatus == false) && (objectSelected == true)) {
-			WebElement lfqaAPIButton = driver.findElement(By.xpath("//button//span[text()='LFQA']"));
-			// Click the Default button to change it to LFQA
-			lfqaAPIButton.click();
-		} else if ((desiredStatus == true) && (objectSelected == false)) {
-			WebElement defaultAPIButton = driver.findElement(By.xpath("//button//span[text()='Default']"));
-			// Click on the LFQA button to change it to Default
-			defaultAPIButton.click();
-		}
-	}
+//	/**
+//	 * Sets the LFQA API as search criteria. If
+//	 */
+//	public void setLFQADefault(boolean desiredStatus) {
+//		AutomationHelper.printMethodName();
+//
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+//		boolean objectSelected = driver.findElements(By.xpath("//button//span[text()='LFQA']")).size() > 0;
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+//
+//		if ((desiredStatus == false) && (objectSelected == true)) {
+//			WebElement lfqaAPIButton = driver.findElement(By.xpath("//button//span[text()='LFQA']"));
+//			// Click the Default button to change it to LFQA
+//			lfqaAPIButton.click();
+//		} else if ((desiredStatus == true) && (objectSelected == false)) {
+//			WebElement defaultAPIButton = driver.findElement(By.xpath("//button//span[text()='Default']"));
+//			// Click on the LFQA button to change it to Default
+//			defaultAPIButton.click();
+//		}
+//	}
 
 	@FindBy(xpath = "//button[@class = 'ant-btn ant-btn-default addon_btn']")
 	WebElement allDomainsButton;
