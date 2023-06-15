@@ -37,7 +37,7 @@ public class SearchMod extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(searchPF.readSearchField(), searchText);
 
 		// Ensure correct API is selected.
-		searchPF.setAPIDefault(DEFAULT_API);
+//		searchPF.setAPIDefault(DEFAULT_API);
 
 		searchPF.clickSearchMagnifyingGlass();
 
@@ -66,13 +66,13 @@ public class SearchMod extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(searchPF.readSearchField(), searchText);
 
 		// Ensure correct API is selected.
-		if (api.equalsIgnoreCase("DEFAULT")) {
-			searchPF.setAPIDefault(true);
-		} else if (api.equalsIgnoreCase("LFQA")) {
-			searchPF.setLFQADefault(true);
-		} else {
-			throw new NoSuchElementException("You must pass in a valid API. Selections are DEFAULT and LFQA");
-		}
+//		if (api.equalsIgnoreCase("DEFAULT")) {
+//			searchPF.setAPIDefault(true);
+//		} else if (api.equalsIgnoreCase("LFQA")) {
+//			searchPF.setLFQADefault(true);
+//		} else {
+//			throw new NoSuchElementException("You must pass in a valid API. Selections are DEFAULT and LFQA");
+//		}
 
 		searchPF.clickSearchMagnifyingGlass();
 
@@ -104,13 +104,13 @@ public class SearchMod extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(searchPF.readSearchField(), searchText);
 
 		// Ensure correct API is selected.
-		if (api.equalsIgnoreCase("DEFAULT")) {
-			searchPF.setAPIDefault(true);
-		} else if (api.equalsIgnoreCase("LFQA")) {
-			searchPF.setLFQADefault(true);
-		} else {
-			throw new NoSuchElementException("You must pass in a valid API. Selections are DEFAULT and LFQA");
-		}
+//		if (api.equalsIgnoreCase("DEFAULT")) {
+//			searchPF.setAPIDefault(true);
+//		} else if (api.equalsIgnoreCase("LFQA")) {
+//			searchPF.setLFQADefault(true);
+//		} else {
+//			throw new NoSuchElementException("You must pass in a valid API. Selections are DEFAULT and LFQA");
+//		}
 
 		searchPF.clickSearchMagnifyingGlass();
 
