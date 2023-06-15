@@ -8,7 +8,9 @@ import CoreConfig.CoreConfig;
 public abstract class SearchConfig extends CoreConfig {
 
 	// Environment URL
-	protected static final String BASE_URL = "https://test-search-2my7afm7yq-ue.a.run.app/";
+//	protected static final String BASE_URL = "https://test-search-2my7afm7yq-ue.a.run.app/";
+	protected static final String BASE_URL = "https://test.dataimagineers.ai/";
+	
 
 	//Production URL
 //	protected static final String BASE_URL = "https://aretec-search-2my7afm7yq-ue.a.run.app/";
@@ -19,6 +21,10 @@ public abstract class SearchConfig extends CoreConfig {
 	//Default API for search
 	protected static boolean DEFAULT_API = true;
 	protected static boolean LFQA_API = false;
+	
+	//Login Credentials
+	protected static String USER_NAME = "jesse.childress@aretecinc.com";
+	protected static String PASSWORD = "football3";
 	
 	private static String LOCAL_DATA_SETS = "dataSets\\localDataSets\\";
 
