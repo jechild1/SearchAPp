@@ -25,7 +25,7 @@ public class SettingsMenusSmoke extends SearchBaseTestScriptConfig {
 
 		// Login to the system
 		LoginMod loginMod = new LoginMod();
-		loginMod.login("jesse.childress@aretecinc.com", "football3");
+		loginMod.login(USER_NAME, PASSWORD);
 
 		//Main Search Page displayed - Click Settings
 		SearchPageFactory spPF = new SearchPageFactory();

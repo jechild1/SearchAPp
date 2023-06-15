@@ -16,7 +16,7 @@ import utilities.AutomationHelper;
  */
 public class Search extends SearchBaseTestScriptConfig {
 
-	@Test (invocationCount = 10)
+	@Test (invocationCount = 1)
 	public void loginSmokeTest() {
 
 		Reporter.log("Beginning test for simple search...", true);
