@@ -3,7 +3,9 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageFactories.DocumentsPageFactory;
 import pageFactories.SearchPageFactory;
+import pageFactories.diSearchBase.UploadDocuments;
 import testCases.ModularTests.LoginMod;
 
 /**
@@ -17,17 +19,47 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 	@Test(invocationCount = 1)
 	public void uploadFiles() {
 		
+		String domain = "SQA Testing";
+		
+		String file1 = "SQA Test A - Software Testing Overview.pdf";
+		String file2 = "SQA Test B - Selenium.pdf";
+		String file3 = "SQA Test C - Jira.pdf";
+		String file4 = "SQA Test D - Test Automation.pdf";
+		String file5 = "SQA Test E - Java.pdf";
+		
 		//First, login
 		//Modular Script for Login
 		LoginMod login = new LoginMod();
 		login.login(USER_NAME, PASSWORD);
 		
-		//Unselect all Domains, which will ensure we searching everything
 		
 		//Delete the files if they exist already
-		
 		//Search Page
 		SearchPageFactory searchPF = new SearchPageFactory();
+		
+		searchPF.clickDocumentsTopLink();
+		
+		//Documents page
+		DocumentsPageFactory documentsPF = new DocumentsPageFactory();
+		
+		//Select the domain from the left hand side
+		documentsPF.getUploadDocuments().selectDomain(domain);
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		searchPF.clickUploadDocuments();
 		
@@ -39,11 +71,10 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		searchPF.getUploadDocuments().selectDomain("SQA Testing");
 		
 		
-		String file1 = "SQA Test A - Software Testing Overview.pdf";
-		String file2 = "SQA Test B - Selenium.pdf";
-		String file3 = "SQA Test C - Jira.pdf";
-		String file4 = "SQA Test D - Test Automation.pdf";
-		String file5 = "SQA Test E - Java.pdf";
+
+		
+		
+			
 
 		
 		searchPF.getUploadDocuments().uploadFile(file1 + "," + file2  + "," + file3  + "," + file4  + "," + file5);
@@ -57,9 +88,7 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		searchPF.getUploadDocuments().clickUpload();
 		
 		
-		//Assert message popus up saying your files will be avaliable soon.
-//		Assert.assertEquals(true, searchPF.isAnnouncementMessageDisplayed("Your file(s) will be available shortly."), "Assert announcement message present");
-		
+	
 		
 		
 		
