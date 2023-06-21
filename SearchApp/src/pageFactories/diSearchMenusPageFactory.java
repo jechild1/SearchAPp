@@ -114,7 +114,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	// This is the icon of the person where the Settings and Logout are present
 	// The OR in the xpath is because the object type changes inside the settings
 	// menus.
-	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
+	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'][2] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
 	WebElement profileMenu;
 
 	/**
