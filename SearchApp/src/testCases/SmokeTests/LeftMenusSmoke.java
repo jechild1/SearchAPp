@@ -3,6 +3,7 @@ package testCases.SmokeTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageFactories.DocumentsPageFactory;
 import pageFactories.SearchPageFactory;
 import pageFactories.SearchResultsPageFactory;
 import testCases.SearchBaseTestScriptConfig;
@@ -23,44 +24,44 @@ public class LeftMenusSmoke extends SearchBaseTestScriptConfig {
 
 		// Login to the system
 		LoginMod loginMod = new LoginMod();
-		loginMod.login("jesse.childress@aretecinc.com", "football3");
+		loginMod.login(USER_NAME, PASSWORD);
 
 		SearchPageFactory spPF = new SearchPageFactory();
 
-		// Perform a simple search
-		spPF.unselectAllDomains();
+//		// Perform a simple search
+//		spPF.unselectAllDomains();
+//
+//		SearchMod search = new SearchMod();
+//
+//		// A search is necessary to pull back the page.
+//		search.search("What is software testing?", "DEFAULT", "SQA Testing");
+//
+//		SearchResultsPageFactory srPF = new SearchResultsPageFactory();
+		
+		spPF.clickDocumentsTopLink();
+		
+		DocumentsPageFactory documentsPF = new DocumentsPageFactory();
 
-		SearchMod search = new SearchMod();
-
-		// A search is necessary to pull back the page.
-		search.search("What can Aretec help me do? Give me a bulleted list", "DEFAULT", "Proposals");
-
-		SearchResultsPageFactory srPF = new SearchResultsPageFactory();
-
-		// This section was removed
-//		System.out.println(srPF.getSearchResults().readResults());
-//		System.out.println(srPF.getSearchResults().readFindings());
-//		System.out.println(srPF.getSearchResults().readTopics());
 
 		/*
 		 * Assert that the left links are present
 		 */
-		Assert.assertEquals(srPF.isSearchResultsPresent(), true, "Left Links - Search Results");
+		Assert.assertEquals(documentsPF.isSearchResultsPresent(), true, "Left Links - Search Results");
 
-		Assert.assertEquals(srPF.isEvaluationYearPresent(), true, "Left Links - Evaluation Year");
-		srPF.clickEvaluationYear();
+		Assert.assertEquals(documentsPF.isEvaluationYearPresent(), true, "Left Links - Evaluation Year");
+		documentsPF.clickEvaluationYear();
 
-		Assert.assertEquals(srPF.isTopicsPresent(), true, "Left Links - Topic(s)");
-		srPF.clickTopics();
+		Assert.assertEquals(documentsPF.isCategoryPresent(), true, "Left Links - Category");
+		documentsPF.clickCategory();
 
-		Assert.assertEquals(srPF.isDocumentsPresent(), true, "Left Links - Document(s)");
-		srPF.clickDocuments();
+		Assert.assertEquals(documentsPF.isDocumentsPresent(), true, "Left Links - Document(s)");
+		documentsPF.clickDocuments();
 
-		Assert.assertEquals(srPF.isDomainsPresent(), true, "Left Links - Domain(s)");
-		srPF.clickDomains();
+		Assert.assertEquals(documentsPF.isDomainsPresent(), true, "Left Links - Domain(s)");
+		documentsPF.clickDomains();
 
-		Assert.assertEquals(srPF.isHistoryPresent(), true, "Left Links - History");
-		srPF.clickHistory();
+		Assert.assertEquals(documentsPF.isHistoryPresent(), true, "Left Links - History");
+		documentsPF.clickHistory();
 
 	}
 

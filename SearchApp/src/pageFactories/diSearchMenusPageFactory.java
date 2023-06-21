@@ -232,11 +232,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 * 
 	 */
 	public String xpathSearchResults = "//div[@class = 'search_result_top bdr_btm searchResult']";
-	public String xpathEvaluationYearLink = "//span[text()='EVALUATION YEAR']";
-	public String xpathTopicsLink = "//span[text()='TOPIC(s)']";
-	public String xpathDocumentsLink = "//span[text()='DOCUMENT(s)']";
-	public String xpathDomainsLink = "//span[text()='DOMAIN(s)']";
-	public String xpathHistoryLink = "//span[text()='HISTORY']";
+	public String xpathEvaluationYearLink = "//span[text()='Evaluation year']";
+	public String xpathDocumentsLink = "//span[text()='Document(s)']";
+	public String xpathCategoryLink = "//span[text()='Category']";
+	public String xpathDomainsLink = "//span[text()='Domain(s)']";
+	public String xpathHistoryLink = "//span[text()='History']";
 
 	/**
 	 * Checks for the presence of the <b>Search Results</b> DIV.
@@ -284,37 +284,37 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	}
 
 	/**
-	 * Checks for the presence of the <b>TOPIC(s)</b> DIV.
+	 * Checks for the presence of the <b>Category</b> DIV.
 	 * 
 	 * @return boolean
 	 */
-	public boolean isTopicsPresent() {
+	public boolean isCategoryPresent() {
 		AutomationHelper.printMethodName();
-		return isWebElementPresent(xpathTopicsLink);
+		return isWebElementPresent(xpathCategoryLink);
 	}
 
 	/**
-	 * Clicks the <b>TOPICS</b> left hand link to display the sub-objects
+	 * Clicks the <b>Category</b> left hand link to display the sub-objects
 	 */
-	public void clickTopics() {
+	public void clickCategory() {
 		AutomationHelper.printMethodName();
 
 		// The following xpath contains an expanded property (the two .. go up two
 		// levels). We must pull attribute property
-		String xpanderDiv = xpathTopicsLink + "/../../div[@class='ant-collapse-header']";
+		String xpanderDiv = xpathCategoryLink + "/../../div[@class='ant-collapse-header']";
 		WebElement topics = driver.findElement(By.xpath(xpanderDiv));
 
 		boolean expandProperty = Boolean.valueOf(topics.getAttribute("aria-expanded"));
 
 		if (!expandProperty) {
 			// Click the button
-			WebElement topicsLink = driver.findElement(By.xpath(xpathTopicsLink));
+			WebElement categoryLink = driver.findElement(By.xpath(xpathCategoryLink));
 
 			// Because elements consistently move as they're being expanded, we must move to
 			// it as to not have click interceptions.
-			moveToElement(topicsLink);
+			moveToElement(categoryLink);
 
-			topicsLink.click();
+			categoryLink.click();
 		}
 	}
 
