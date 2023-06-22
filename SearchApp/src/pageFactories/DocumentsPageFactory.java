@@ -1,6 +1,11 @@
 package pageFactories;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utilities.DiTables;
+
 /**
  * Page Factory Class to contain methods that interact with objects on the
  * <b>Documents Page</b>
@@ -23,6 +28,21 @@ public class DocumentsPageFactory extends diSearchMenusPageFactory {
 
 	}
 
-
+	/**
+	 * Returns a reference to the Documents table.
+	 */
+	@FindBy(xpath = "//table")
+	WebElement documentsTable;
+	
+	/**
+	 * Returns a reference to the Documents Table.
+	 * @return WebElement documentsTable
+	 */
+	public DiTables getDocumentsTable(){
+		
+		return new DiTables(documentsTable);
+	}
+	
+	
 
 }
