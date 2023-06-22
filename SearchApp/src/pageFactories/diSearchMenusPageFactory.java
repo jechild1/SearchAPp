@@ -2,6 +2,7 @@ package pageFactories;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -114,7 +115,8 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	// This is the icon of the person where the Settings and Logout are present
 	// The OR in the xpath is because the object type changes inside the settings
 	// menus.
-	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'][2] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
+//	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'][2] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
+	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
 	WebElement profileMenu;
 
 	/**
@@ -274,11 +276,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement evaluationYearLink = driver.findElement(By.xpath(xpathEvaluationYearLink));
-			
+
 			// Because elements consistently move as they're being expanded, we must move to
 			// it as to not have click interceptions.
 			moveToElement(evaluationYear);
-			
+
 			evaluationYearLink.click();
 		}
 	}
@@ -350,11 +352,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement documentsLink = driver.findElement(By.xpath(xpathDocumentsLink));
-			
+
 			// Because elements consistently move as they're being expanded, we must move to
 			// it as to not have click interceptions.
 			moveToElement(documentsLink);
-			
+
 			documentsLink.click();
 		}
 	}
@@ -384,12 +386,12 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 
 		if (!expandProperty) {
 			// Click the button
-			WebElement domainsLink = driver.findElement(By.xpath(xpathDomainsLink));
-			
-			// Because elements consistently move as they're being expanded, we must move to
-			// it as to not have click interceptions.
-			moveToElement(domainsLink);
-			
+			WebElement domainsLink = driver.findElement(By.xpath(xpanderDiv));
+
+//			// Because elements consistently move as they're being expanded, we must move to
+//			// it as to not have click interceptions.
+//			moveToElement(domainsLink);
+
 			domainsLink.click();
 		}
 	}
@@ -420,19 +422,31 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		if (!expandProperty) {
 			// Click the button
 			WebElement historyLink = driver.findElement(By.xpath(xpathHistoryLink));
-			
+
 			// Because elements consistently move as they're being expanded, we must move to
 			// it as to not have click interceptions.
 			moveToElement(historyLink);
-			
+
 			historyLink.click();
 		}
 	}
 
+	/**
+	 * Getter reference for Search Results objects
+	 * 
+	 * @return SearchResults
+	 */
 	public SearchResults getSearchResults() {
 		return new SearchResults();
 	}
 
+	/**
+	 * Class to handle the creation of Search Result objects. Note this has
+	 * temporary been done away with.
+	 * 
+	 * @author Jesse Childress
+	 *
+	 */
 	public class SearchResults {
 
 		// Grabs the parent div for the search results to reduce scope
@@ -516,6 +530,251 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			clickOpenReferences();
 			return "";
 		}
+
+	}
+
+	/**
+	 * Getter reference for Domain objects in the left hand menu.
+	 * 
+	 * @return SearchResults
+	 */
+	public Domains getDomains() {
+		return new Domains();
+	}
+
+	/**
+	 * Class to handle objects in the Domain(s) left hand menu of a given page.
+	 * 
+	 * @author Jesse Childress
+	 *
+	 */
+	public class Domains {
+		
+		
+		/**
+		 * Method to check for the visible presence of the Domain(s) pop out. If the
+		 * "Add Domain(s)" button was clicked, this menu should appear.
+		 * 
+		 * @return boolean
+		 */
+		private boolean isDomainMenuVisible() {
+
+			// Adjust Timeout Temporarily
+			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
+
+			List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-popover-inner-content']"));
+
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+
+			if (domainMenu.size() > 0) {
+				return true;
+			} else {
+				return false;
+			}
+
+		}
+
+		/**
+		 * Returns a list of Domains from the Domain list. Only prints to the console.
+		 * Note: Only returns top level domains and not sub-domains.
+		 * 
+		 */
+		public void readDomainList() {
+
+			// First, click the Domain(s) button
+			clickDomains();
+
+			String xpath = "//div[@class='ant-popover ant-popover-placement-bottomLeft ']//span[@class = 'ant-tree-title']";
+
+			List<WebElement> domainList = driver.findElements(By.xpath(xpath));
+
+			for (WebElement currentListItem : domainList) {
+				System.out.println(currentListItem.getText());
+			}
+
+		}
+
+		/**
+		 * Method to select the domains / sub-domains that are needed in the search.
+		 * This method takes a String or String array. Note: Case must be correct
+		 * 
+		 * @param domains
+		 */
+		public void selectDomain(String... domains) {
+
+			AutomationHelper.printMethodName();
+
+			clickDomains();
+
+			// First, open all of the closed domains
+			openClosedDomains();
+
+			// Second, uncheck ALL domains. This is necessary to get a clean slate.
+			// Find a list of checked domains
+
+			// Find the Domains Menu - Used to reduce scope.
+			WebElement domainMenu = driver.findElement(By.xpath("//div[@class = 'ant-tree-list-holder-inner']"));
+
+			// Find all of the elements that are currently checked. This is surrounded by
+			// time managers as to reduce wait time.
+			long startTime = System.nanoTime();
+
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+
+			List<WebElement> checkedDomains = domainMenu
+					.findElements(By.xpath("//span[@class = 'ant-tree-checkbox ant-tree-checkbox-checked']"));
+
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+
+			long endTime = System.nanoTime();
+			System.out.println("Select Domain > Finding Checked Domains took: "
+					+ TimeUnit.SECONDS.convert(Duration.ofNanos(endTime - startTime)));
+
+			// Loop through all of the checked domains and click them to uncheck them. The
+			// wait allows time for object to adjust as to not have misplaced clicks.
+			for (WebElement currentCheckedDomain : checkedDomains) {
+				currentCheckedDomain.click();
+				AutomationHelper.waitMillis(50);
+			}
+
+			// Take in the passed domain string and cycle through, selecting each
+			// one.
+			for (String currentDomain : domains) {
+
+				// Build the xpath of the current checkbox, based on the passed in string
+				String domainXpath = "//span[text()= '" + currentDomain
+						+ "']/ancestor::div/span[@class = 'ant-tree-checkbox']";
+
+				// Grab a WebElement of the checkbox
+				WebElement currentCheckBox = driver.findElement(By.xpath(domainXpath));
+
+				// Check the checkbox
+				currentCheckBox.click();
+			}
+
+		}
+
+		/**
+		 * Method to unselect the passed in Domain values. The passed in text is case
+		 * sensitive. This method will accept a string or a string array or items to
+		 * unselect. Note: Case must be correct
+		 * 
+		 * @param domains
+		 */
+		public void unselectDomain(String... domains) {
+
+			clickDomains();
+
+			// First, open all of the closed domains
+			openClosedDomains();
+
+			// Second, uncheck ALL domains. This is necessary to get a clean slate.
+			// Find a list of checked domains
+			List<WebElement> checkedDomains = driver.findElements(
+					By.xpath("//span[@class = 'ant-tree-checkbox ant-tree-checkbox-checked']/following-sibling::span"));
+
+			// Cycle through the list of check domains. If the domain text matches what is
+			// in the domains String[], uncheck it
+			for (WebElement currentCheckedDomain : checkedDomains) {
+
+				String domainText = currentCheckedDomain.getText().trim();
+
+				for (String currentDomainText : domains) {
+
+					if (currentDomainText.equals(domainText)) {
+						currentCheckedDomain.click();
+					}
+				}
+
+			}
+
+		}
+		
+		/**
+		 * Method to unselect all currently selected domains
+		 */
+		public void unselectAllDomains() {
+			
+			clickDomains();
+
+			// First, open all of the closed domains
+			openClosedDomains();
+
+			// Second, uncheck ALL domains. This is necessary to get a clean slate.
+			// Find a list of checked domains
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+			List<WebElement> checkedDomains = driver.findElements(
+					By.xpath("//span[@class = 'ant-tree-checkbox ant-tree-checkbox-checked']/following-sibling::span"));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+
+			for(WebElement currentCheckedDomain : checkedDomains) {
+				currentCheckedDomain.click();
+				AutomationHelper.waitMillis(100);
+			}
+			
+		}
+
+		@FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg upl_btn_icon']")
+		WebElement uploadDocumentsButton;
+
+		/**
+		 * Clicks the <b>Upload Documents</b> button.
+		 */
+		public void clickUploadDocuments() {
+			AutomationHelper.printMethodName();
+			uploadDocumentsButton.click();
+		}
+
+		/**
+		 * Utility method to open all of the Closed Domains. This means clicking the
+		 * triangle to expand the list. This needs to happen because until the list is
+		 * expanded, the object properties are not predictable.
+		 */
+		private void openClosedDomains() {
+
+			AutomationHelper.printMethodName();
+
+			//Adjust time outs 
+
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+
+			//Grab a list of all of the triangle expanders
+			List<WebElement> closedDomainGroups = driver
+					.findElements(By.xpath("//span[@class = 'ant-tree-switcher ant-tree-switcher_close']"));
+				
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+
+			for (WebElement currentDomainGroup : closedDomainGroups) {
+
+				//TODO - Click interception can happen here.
+				currentDomainGroup.click();
+
+				AutomationHelper.waitMillis(300);
+
+			}
+
+		}
+		
+		/**
+		 * Clicks the Search Domains button in the left hand menu. Note: Will wait for the page to load.
+		 */
+		public void clickSearchDomains() {
+			AutomationHelper.printMethodName();
+			
+			WebElement searchButton = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary']"));
+			
+			searchButton.click();
+			waitForPageToLoad();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 }
