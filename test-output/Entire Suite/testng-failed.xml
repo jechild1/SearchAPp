@@ -13,4 +13,26 @@
       </class> <!-- testCases.SmokeTests.LeftMenusSmoke -->
     </classes>
   </test> <!-- Smoke Test - Left Menus(failed) -->
+  <test thread-count="1" parallel="classes" name="Smoke Test - Top Menus(failed)">
+    <classes>
+      <class name="testCases.SmokeTests.TopMenusSmoke">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TopMenusSmokeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.SmokeTests.TopMenusSmoke -->
+    </classes>
+  </test> <!-- Smoke Test - Top Menus(failed) -->
+  <test thread-count="1" parallel="classes" name="Smoke Test - Settings Menus(failed)">
+    <classes>
+      <class name="testCases.SmokeTests.SettingsMenusSmoke">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TopMenusSmokeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.SmokeTests.SettingsMenusSmoke -->
+    </classes>
+  </test> <!-- Smoke Test - Settings Menus(failed) -->
 </suite> <!-- Failed suite [Entire Suite] -->

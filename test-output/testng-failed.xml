@@ -5,8 +5,8 @@
     <classes>
       <class name="testCases.UploadFiles">
         <methods>
-          <include name="afterClass"/>
           <include name="uploadFiles"/>
+          <include name="afterClass"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- testCases.UploadFiles -->
