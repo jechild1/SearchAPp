@@ -27,15 +27,6 @@ public abstract class diSearchBase extends SearchConfig {
 	}
 
 	/**
-	 * Getter method to return a class object for Upload Documents
-	 * 
-	 * @return UploadDocuments
-	 */
-	public UploadDocuments getUploadDocuments() {
-		return new UploadDocuments();
-	}
-
-	/**
 	 * Private utility method that checks for the presence of a WebElement by a
 	 * passed in XPATH.
 	 * 
@@ -90,6 +81,15 @@ public abstract class diSearchBase extends SearchConfig {
 			}
 		}
 		return announcementMessagePresent;
+	}
+
+	/**
+	 * Getter method to return a class object for Upload Documents
+	 * 
+	 * @return UploadDocuments
+	 */
+	public UploadDocuments getUploadDocuments() {
+		return new UploadDocuments();
 	}
 
 	/**
