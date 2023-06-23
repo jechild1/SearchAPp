@@ -319,6 +319,10 @@ public abstract class diSearchBase extends SearchConfig {
 		public void clickUpload() {
 			AutomationHelper.printMethodName();
 			uploadButton.click();
+			
+			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//div[@class='ant-modal-content']"))));
+
 		}
 
 		/**
