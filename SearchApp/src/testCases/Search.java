@@ -23,7 +23,7 @@ public class Search extends SearchBaseTestScriptConfig {
 
 		// Login to the system
 		LoginMod loginMod = new LoginMod();
-		loginMod.login("jesse.childress@aretecinc.com", "football3");	
+		loginMod.login(USER_NAME, PASSWORD);	
 		
 		//Search Page
 		SearchMod search = new SearchMod();
