@@ -1,7 +1,5 @@
 package testCases;
 
-import static org.testng.Assert.assertThrows;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -127,7 +125,7 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		documentsPF = new DocumentsPageFactory();
 
 		// Scope down the search domain to SQA
-		searchPF.getUploadDocuments().selectDomain(domain);
+		documentsPF.getDomains().selectDomain(domain);
 
 		// Click Search in Domains
 		documentsPF.getDomains().clickSearchDomains();
