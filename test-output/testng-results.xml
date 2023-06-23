@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Beginning test for Recently Uploaded Files search...]]>
+    </line>
     <line>
       <![CDATA[Beginning Login Modular Test...]]>
     </line>
@@ -68,31 +71,16 @@
       <![CDATA[Current URL : https://test.dataimagineers.ai/documents]]>
     </line>
     <line>
-      <![CDATA[Method: selectDomain]]>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
     </line>
     <line>
-      <![CDATA[Method: clickDomains]]>
+      <![CDATA[Method: getPaginationPageNumber]]>
     </line>
     <line>
-      <![CDATA[Method: openClosedDomains]]>
+      <![CDATA[Currently on table page: 1]]>
     </line>
     <line>
-      <![CDATA[Method: clickSearchDomains]]>
-    </line>
-    <line>
-      <![CDATA[Waiting for page to load completely...]]>
-    </line>
-    <line>
-      <![CDATA[The page 'Test App' is fully loaded now.]]>
-    </line>
-    <line>
-      <![CDATA[Method: isWebElementPresent]]>
-    </line>
-    <line>
-      <![CDATA[There is no table object on the page.]]>
-    </line>
-    <line>
-      <![CDATA[Method: clickHomeTopLink]]>
+      <![CDATA[Method: clickNextPagination]]>
     </line>
     <line>
       <![CDATA[Waiting for page to load completely...]]>
@@ -101,70 +89,376 @@
       <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Expected URL: https://test.dataimagineers.ai/]]>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
     </line>
     <line>
-      <![CDATA[Current URL : https://test.dataimagineers.ai/]]>
+      <![CDATA[Method: getPaginationPageNumber]]>
     </line>
     <line>
-      <![CDATA[Method: clickUploadDocuments]]>
+      <![CDATA[Currently on table page: 2]]>
     </line>
     <line>
-      <![CDATA[Method: clickSelectDomainButton]]>
+      <![CDATA[Method: clickNextPagination]]>
     </line>
     <line>
-      <![CDATA[Method: selectDomain]]>
+      <![CDATA[Waiting for page to load completely...]]>
     </line>
     <line>
-      <![CDATA[Method: clickSelectDomainButton]]>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Select Domain Button already clicked. Menus already present on page.]]>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
     </line>
     <line>
-      <![CDATA[Method: openClosedDomains]]>
+      <![CDATA[Method: getPaginationPageNumber]]>
     </line>
     <line>
-      <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test A - Software Testing Overview.pdf]]>
+      <![CDATA[Currently on table page: 3]]>
     </line>
     <line>
-      <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test B - Selenium.pdf]]>
+      <![CDATA[Method: clickNextPagination]]>
     </line>
     <line>
-      <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test C - Jira.pdf]]>
+      <![CDATA[Waiting for page to load completely...]]>
     </line>
     <line>
-      <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test D - Test Automation.pdf]]>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test E - Java.pdf]]>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
     </line>
     <line>
-      <![CDATA[Method: isFileInUploadList]]>
+      <![CDATA[Method: getPaginationPageNumber]]>
     </line>
     <line>
-      <![CDATA[Method: isFileInUploadList]]>
+      <![CDATA[Currently on table page: 4]]>
     </line>
     <line>
-      <![CDATA[Method: isFileInUploadList]]>
+      <![CDATA[Method: clickNextPagination]]>
     </line>
     <line>
-      <![CDATA[Method: isFileInUploadList]]>
+      <![CDATA[Waiting for page to load completely...]]>
     </line>
     <line>
-      <![CDATA[Method: isFileInUploadList]]>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
     <line>
-      <![CDATA[Method: clickUpload]]>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 5]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 6]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 7]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 8]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 9]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 10]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 11]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 12]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 13]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 14]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 15]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 16]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
+    </line>
+    <line>
+      <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+    </line>
+    <line>
+      <![CDATA[Method: getPaginationPageNumber]]>
+    </line>
+    <line>
+      <![CDATA[Currently on table page: 17]]>
+    </line>
+    <line>
+      <![CDATA[Method: clickNextPagination]]>
+    </line>
+    <line>
+      <![CDATA[Waiting for page to load completely...]]>
+    </line>
+    <line>
+      <![CDATA[The page 'Test App' is fully loaded now.]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-22T09:18:11 EDT" name="Default suite" finished-at="2023-06-22T09:28:48 EDT" duration-ms="636902">
+  <suite started-at="2023-06-23T14:21:09 EDT" name="Default suite" finished-at="2023-06-23T14:22:01 EDT" duration-ms="52116">
     <groups>
     </groups>
-    <test started-at="2023-06-22T09:18:11 EDT" name="Default test" finished-at="2023-06-22T09:28:48 EDT" duration-ms="636902">
-      <class name="testCases.UploadFiles">
-        <test-method signature="uploadFiles()[pri:0, instance:testCases.UploadFiles@792b749c]" started-at="2023-06-22T09:18:11 EDT" name="uploadFiles" finished-at="2023-06-22T09:28:47 EDT" duration-ms="636316" status="PASS">
+    <test started-at="2023-06-23T14:21:09 EDT" name="Default test" finished-at="2023-06-23T14:22:01 EDT" duration-ms="52116">
+      <class name="testCases.RecentlyUploadedFiles">
+        <test-method signature="validateRecntlyUploadedFiles()[pri:0, instance:testCases.RecentlyUploadedFiles@6d60fe40]" started-at="2023-06-23T14:21:09 EDT" name="validateRecntlyUploadedFiles" finished-at="2023-06-23T14:22:00 EDT" duration-ms="51572" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class = 'anticon anticon-right']/parent::button"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c2de87cf65b2c8b41628e4dfcf3b531, findElement {using=xpath, value=//span[@class = 'anticon anticon-right']/parent::button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58257}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58257/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c2de87cf65b2c8b41628e4dfcf3b531]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class = 'anticon anticon-right']/parent::button"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c2de87cf65b2c8b41628e4dfcf3b531, findElement {using=xpath, value=//span[@class = 'anticon anticon-right']/parent::button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\jesse\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58257}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58257/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c2de87cf65b2c8b41628e4dfcf3b531
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at utilities.DiTables$Pagination.isPaginationPresent(DiTables.java:1158)
+at utilities.DiTables.isRowInTableByValue(DiTables.java:394)
+at testCases.RecentlyUploadedFiles.validateRecntlyUploadedFiles(RecentlyUploadedFiles.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Beginning test for Recently Uploaded Files search...]]>
+            </line>
             <line>
               <![CDATA[Beginning Login Modular Test...]]>
             </line>
@@ -232,31 +526,16 @@
               <![CDATA[Current URL : https://test.dataimagineers.ai/documents]]>
             </line>
             <line>
-              <![CDATA[Method: selectDomain]]>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
             </line>
             <line>
-              <![CDATA[Method: clickDomains]]>
+              <![CDATA[Method: getPaginationPageNumber]]>
             </line>
             <line>
-              <![CDATA[Method: openClosedDomains]]>
+              <![CDATA[Currently on table page: 1]]>
             </line>
             <line>
-              <![CDATA[Method: clickSearchDomains]]>
-            </line>
-            <line>
-              <![CDATA[Waiting for page to load completely...]]>
-            </line>
-            <line>
-              <![CDATA[The page 'Test App' is fully loaded now.]]>
-            </line>
-            <line>
-              <![CDATA[Method: isWebElementPresent]]>
-            </line>
-            <line>
-              <![CDATA[There is no table object on the page.]]>
-            </line>
-            <line>
-              <![CDATA[Method: clickHomeTopLink]]>
+              <![CDATA[Method: clickNextPagination]]>
             </line>
             <line>
               <![CDATA[Waiting for page to load completely...]]>
@@ -265,80 +544,311 @@
               <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Expected URL: https://test.dataimagineers.ai/]]>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
             </line>
             <line>
-              <![CDATA[Current URL : https://test.dataimagineers.ai/]]>
+              <![CDATA[Method: getPaginationPageNumber]]>
             </line>
             <line>
-              <![CDATA[Method: clickUploadDocuments]]>
+              <![CDATA[Currently on table page: 2]]>
             </line>
             <line>
-              <![CDATA[Method: clickSelectDomainButton]]>
+              <![CDATA[Method: clickNextPagination]]>
             </line>
             <line>
-              <![CDATA[Method: selectDomain]]>
+              <![CDATA[Waiting for page to load completely...]]>
             </line>
             <line>
-              <![CDATA[Method: clickSelectDomainButton]]>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Select Domain Button already clicked. Menus already present on page.]]>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
             </line>
             <line>
-              <![CDATA[Method: openClosedDomains]]>
+              <![CDATA[Method: getPaginationPageNumber]]>
             </line>
             <line>
-              <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test A - Software Testing Overview.pdf]]>
+              <![CDATA[Currently on table page: 3]]>
             </line>
             <line>
-              <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test B - Selenium.pdf]]>
+              <![CDATA[Method: clickNextPagination]]>
             </line>
             <line>
-              <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test C - Jira.pdf]]>
+              <![CDATA[Waiting for page to load completely...]]>
             </line>
             <line>
-              <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test D - Test Automation.pdf]]>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[File Uploaded: C:\Users\jesse\git\SearchApp\dataSets\localDataSets\SQA Test E - Java.pdf]]>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
             </line>
             <line>
-              <![CDATA[Method: isFileInUploadList]]>
+              <![CDATA[Method: getPaginationPageNumber]]>
             </line>
             <line>
-              <![CDATA[Method: isFileInUploadList]]>
+              <![CDATA[Currently on table page: 4]]>
             </line>
             <line>
-              <![CDATA[Method: isFileInUploadList]]>
+              <![CDATA[Method: clickNextPagination]]>
             </line>
             <line>
-              <![CDATA[Method: isFileInUploadList]]>
+              <![CDATA[Waiting for page to load completely...]]>
             </line>
             <line>
-              <![CDATA[Method: isFileInUploadList]]>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
             <line>
-              <![CDATA[Method: clickUpload]]>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 5]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 6]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 7]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 8]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 9]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 10]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 11]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 12]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 13]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 14]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 15]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 16]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
+            </line>
+            <line>
+              <![CDATA[Beginning isRowInTable search for 'SQA Test - TEMP UPLOAD.pdf' in column 'File Name(s)'.]]>
+            </line>
+            <line>
+              <![CDATA[Method: getPaginationPageNumber]]>
+            </line>
+            <line>
+              <![CDATA[Currently on table page: 17]]>
+            </line>
+            <line>
+              <![CDATA[Method: clickNextPagination]]>
+            </line>
+            <line>
+              <![CDATA[Waiting for page to load completely...]]>
+            </line>
+            <line>
+              <![CDATA[The page 'Test App' is fully loaded now.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- uploadFiles -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.UploadFiles@792b749c]" started-at="2023-06-22T09:28:47 EDT" name="afterMethod" finished-at="2023-06-22T09:28:48 EDT" duration-ms="447" status="PASS">
+        </test-method> <!-- validateRecntlyUploadedFiles -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testCases.RecentlyUploadedFiles@6d60fe40]" started-at="2023-06-23T14:22:00 EDT" name="afterMethod" finished-at="2023-06-23T14:22:01 EDT" duration-ms="471" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=uploadFiles status=SUCCESS method=UploadFiles.uploadFiles()[pri:0, instance:testCases.UploadFiles@792b749c] output=Beginning Login Modular Test...]]]>
+                <![CDATA[[TestResult name=validateRecntlyUploadedFiles status=FAILURE method=RecentlyUploadedFiles.validateRecntlyUploadedFiles()[pri:0, instance:testCases.RecentlyUploadedFiles@6d60fe40] output=Beginning test for Recently Uploaded Files search...]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.UploadFiles@792b749c]" started-at="2023-06-22T09:28:48 EDT" name="afterClass" finished-at="2023-06-22T09:28:48 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.RecentlyUploadedFiles@6d60fe40]" started-at="2023-06-23T14:22:01 EDT" name="afterClass" finished-at="2023-06-23T14:22:01 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- testCases.UploadFiles -->
+      </class> <!-- testCases.RecentlyUploadedFiles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

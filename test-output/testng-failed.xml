@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.UploadFiles">
+      <class name="testCases.RecentlyUploadedFiles">
         <methods>
-          <include name="uploadFiles"/>
           <include name="afterClass"/>
+          <include name="validateRecntlyUploadedFiles"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.UploadFiles -->
+      </class> <!-- testCases.RecentlyUploadedFiles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
