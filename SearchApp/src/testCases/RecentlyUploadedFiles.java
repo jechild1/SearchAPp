@@ -42,33 +42,42 @@ public class RecentlyUploadedFiles extends SearchBaseTestScriptConfig {
 
 		// Documents page displayed
 		DocumentsPageFactory documentsPF = new DocumentsPageFactory();
-//		documentsPF.getDomains().selectDomain("Health and Fitness");
-//		documentsPF.getDomains().selectDomain("Proposals");
 
-//		documentsPF.getDomains().clickSearchDomains();
-		
-		//Purposely do not scope the domain down so that pagination is tested.
-		Assert.assertEquals(documentsPF.getDocumentsTable().isRowInTableByValue("File Name(s)", fileWithPDF), true, "TEST");
-		
-		
-		//If it is good
-		
-		
-		
-		
+		// Purposely do not scope the domain down so that pagination is tested.
+		// If the file is there, delete it.
+
+//		Assert.assertEquals(documentsPF.getDocumentsTable().isRowInTableByValue("File Name(s)", fileWithPDF), true, "TEST");
+
+		// Navigate back to the Serach page
+		documentsPF.clickHomeTopLink();
+
+		searchPF = new SearchPageFactory();
 
 		/*
 		 * Upload the file new
 		 */
 
+//		searchPF.clickUploadFiles();
+
+		// TODO - The domain list does not have a scroll bar, and is unusable when the
+		// list gets long. We cannot expand all of these items in order to work with
+		// them. There is a current defect in for this.
+//		searchPF.getUploadFiles().selectDomain(domain);
+//		searchPF.getUploadFiles().uploadFile(file); // TXT version
+//
+//		// Click the upload button
+//		searchPF.getUploadFiles().clickUpload();
+
 		/*
 		 * Wait on the new file to be processed
 		 */
+		
+		//TODO
 
 		/*
 		 * Check the login page to see if the file exists there
 		 */
-
+		Assert.assertEquals(searchPF.isFileInRecentlyUploaded("What-can-machine-learning-do-Science.pdf"), true, "Recently uploaded File");
 	}
 
 }

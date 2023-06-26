@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -292,12 +293,12 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		}
 
 	}
-	
+
 	/**
 	 * Method to unselect all currently selected domains
 	 */
 	public void unselectAllDomains() {
-		
+
 		clickAllDomainsButton();
 
 		// First, open all of the closed domains
@@ -310,22 +311,22 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 				By.xpath("//span[@class = 'ant-tree-checkbox ant-tree-checkbox-checked']/following-sibling::span"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
 
-		for(WebElement currentCheckedDomain : checkedDomains) {
+		for (WebElement currentCheckedDomain : checkedDomains) {
 			currentCheckedDomain.click();
 			AutomationHelper.waitMillis(100);
 		}
-		
+
 	}
 
 	@FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg upl_btn_icon']")
-	WebElement uploadDocumentsButton;
+	WebElement uploadFilesButton;
 
 	/**
-	 * Clicks the <b>Upload Documents</b> button.
+	 * Clicks the <b>Upload Files</b> button.
 	 */
-	public void clickUploadDocuments() {
+	public void clickUploadFiles() {
 		AutomationHelper.printMethodName();
-		uploadDocumentsButton.click();
+		uploadFilesButton.click();
 	}
 
 	/**
@@ -337,14 +338,14 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 
 		AutomationHelper.printMethodName();
 
-		//Adjust time outs 
+		// Adjust time outs
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 
-		//Grab a list of all of the triangle expanders
+		// Grab a list of all of the triangle expanders
 		List<WebElement> closedDomainGroups = driver
 				.findElements(By.xpath("//span[@class = 'ant-tree-switcher ant-tree-switcher_close']"));
-			
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
 
 		for (WebElement currentDomainGroup : closedDomainGroups) {
@@ -354,6 +355,49 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 			AutomationHelper.waitMillis(100);
 
 		}
+
+	}
+
+	/**
+	 * Method that checks for the presence of a recently uploaded file to be in the
+	 * Recently Uploaded file section.
+	 * <p>
+	 * Note: this method requires that the text be exact, and that the recently
+	 * uploaded files be within the last 5 files uploaded. That is all this object
+	 * holds.
+	 * 
+	 * @param fileNameForSearch
+	 * @return boolean
+	 */
+	public boolean isFileInRecentlyUploaded(String fileNameForSearch) {
+		AutomationHelper.printMethodName();
+		boolean found = false;
+
+		List<WebElement> recentlyUploadedList = driver
+				.findElements(By.xpath("//section[@class = 'grid-right-home']//div[@class='recent']"));
+
+		if (recentlyUploadedList.size() > 0) {
+
+			// Loop through each of the recently uploaded files that were found. If a match
+			// is found, break out of the loop and return true.
+
+			for (WebElement currentFile : recentlyUploadedList) {
+
+				// Get the text of the WebElement
+				String currentFileText = currentFile.getText();
+
+				if (currentFileText.equals(fileNameForSearch)) {
+					found = true;
+					break;
+				}
+
+			}
+
+		} else {
+			throw new ElementNotVisibleException("There are no items in the recently uploaded file list");
+		}
+
+		return found;
 
 	}
 

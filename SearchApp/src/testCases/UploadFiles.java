@@ -96,23 +96,23 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		 * Begin the document upload process
 		 */
 
-		searchPF.clickUploadDocuments();
+		searchPF.clickUploadFiles();
 
 		// The modal is now displayed
-		searchPF.getUploadDocuments().clickSelectDomainButton();
+		searchPF.getUploadFiles().clickSelectDomainButton();
 
 		// Select the domain for the file to be attached to
-		searchPF.getUploadDocuments().selectDomain(domain);
+		searchPF.getUploadFiles().selectDomain(domain);
 
-		searchPF.getUploadDocuments().uploadFile(file1 + "," + file2 + "," + file3 + "," + file4 + "," + file5);
+		searchPF.getUploadFiles().uploadFile(file1 + "," + file2 + "," + file3 + "," + file4 + "," + file5);
 
-		Assert.assertEquals(true, searchPF.getUploadDocuments().isFileInUploadList(file1), "Assert File 1 present");
-		Assert.assertEquals(true, searchPF.getUploadDocuments().isFileInUploadList(file2), "Assert File 2 present");
-		Assert.assertEquals(true, searchPF.getUploadDocuments().isFileInUploadList(file3), "Assert File 3 present");
-		Assert.assertEquals(true, searchPF.getUploadDocuments().isFileInUploadList(file4), "Assert File 4 present");
-		Assert.assertEquals(true, searchPF.getUploadDocuments().isFileInUploadList(file5), "Assert File 5 present");
+		Assert.assertEquals(true, searchPF.getUploadFiles().isFileInUploadList(file1), "Assert File 1 present");
+		Assert.assertEquals(true, searchPF.getUploadFiles().isFileInUploadList(file2), "Assert File 2 present");
+		Assert.assertEquals(true, searchPF.getUploadFiles().isFileInUploadList(file3), "Assert File 3 present");
+		Assert.assertEquals(true, searchPF.getUploadFiles().isFileInUploadList(file4), "Assert File 4 present");
+		Assert.assertEquals(true, searchPF.getUploadFiles().isFileInUploadList(file5), "Assert File 5 present");
 
-		searchPF.getUploadDocuments().clickUpload();
+		searchPF.getUploadFiles().clickUpload();
 
 		/*
 		 * Begin check for recently uploaded files

@@ -84,26 +84,26 @@ public abstract class diSearchBase extends SearchConfig {
 	}
 
 	/**
-	 * Getter method to return a class object for Upload Documents
+	 * Getter method to return a class object for Upload Files
 	 * 
-	 * @return UploadDocuments
+	 * @return UploadFiles
 	 */
-	public UploadDocuments getUploadDocuments() {
-		return new UploadDocuments();
+	public UploadFiles getUploadFiles() {
+		return new UploadFiles();
 	}
 
 	/**
-	 * Class that will contain methods that handle the uploading of documents
+	 * Class that will contain methods that handle the uploading of files
 	 * 
 	 * @author Jesse Childress
 	 *
 	 */
-	public class UploadDocuments {
+	public class UploadFiles {
 
 		/*
 		 * Initialize elements of a given page factory
 		 */
-		public UploadDocuments() {
+		public UploadFiles() {
 			PageFactory.initElements(driver, this);
 		}
 
@@ -315,13 +315,17 @@ public abstract class diSearchBase extends SearchConfig {
 
 		/**
 		 * Clicks the <b>Upload</b> button.
+		 * <p>
+		 * Note: This method will wait until the popup has disappeared to continue
+		 * processing (for a max of 5 seconds)
 		 */
 		public void clickUpload() {
 			AutomationHelper.printMethodName();
 			uploadButton.click();
-			
-			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
-			wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.xpath("//div[@class='ant-modal-content']"))));
+
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions
+					.invisibilityOf(driver.findElement(By.xpath("//div[@class='ant-modal-content']"))));
 
 		}
 
@@ -400,6 +404,7 @@ public abstract class diSearchBase extends SearchConfig {
 				fileUploadObject.sendKeys(filePath);
 
 			}
+
 		}
 
 		/**
