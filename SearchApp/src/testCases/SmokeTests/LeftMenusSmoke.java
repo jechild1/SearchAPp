@@ -5,10 +5,8 @@ import org.testng.annotations.Test;
 
 import pageFactories.DocumentsPageFactory;
 import pageFactories.SearchPageFactory;
-import pageFactories.SearchResultsPageFactory;
 import testCases.SearchBaseTestScriptConfig;
 import testCases.ModularTests.LoginMod;
-import testCases.ModularTests.SearchMod;
 
 /**
  * Test to login to the system and to ensure that the left menus exist and are
