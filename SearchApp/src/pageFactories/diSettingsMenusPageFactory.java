@@ -9,8 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.AutomationHelper;
 
 /**
- * All pages with menus should extend this page. This allows access to methods
- * that allow the user to interact with menus.
+ * This class should be inherited to sub-classes that are in the Settings menu.
  * 
  * @author jesse.childress
  *
