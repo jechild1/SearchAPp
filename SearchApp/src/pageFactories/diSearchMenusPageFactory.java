@@ -48,15 +48,38 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 
 	}
 
-	@FindBy(xpath = "//div[@class='flex-row display-flex header-title-div']/p[text()='Home']")
-	WebElement homeLink;
+	/**
+	 * Checks to see if the slide menu is enabled (visible and clickable).
+	 * 
+	 * @return boolean
+	 */
+	private boolean isSlideMenuOpen() {
+
+		boolean found = false;
+
+		AutomationHelper.adjustWaitTimeToShort();
+		List<WebElement> slideMenu = driver.findElements(By.xpath("//div[@class = 'drawer_cont']"));
+
+		if (slideMenu.size() > 0) {
+			found = true;
+		}
+
+		AutomationHelper.adjustWaitTimeToNormal();
+
+		return found;
+	}
 
 	/**
-	 * Clicks the <i>Home</i> link in the top menu.
+	 * Clicks the button to open up the slide menu. This method check to see if it
+	 * is open already. If not, it will open it.
 	 */
-	public void clickHomeTopLink() {
-		AutomationHelper.printMethodName();
-		homeLink.click();
+	public void clickSlideMenu() {
+
+		WebElement slideMenuButton = driver
+				.findElement(By.xpath("//span[@class = 'material-symbols-outlined menu_bar_icon']"));
+
+		slideMenuButton.click();
+
 	}
 
 	/**
@@ -66,222 +89,179 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public boolean isHomeLinkPresent() {
 		AutomationHelper.printMethodName();
-		return isWebElementPresent("//div[@class='flex-row display-flex header-title-div']/p[text()='Home']");
+		clickSlideMenu();
+		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Home')]");
 	}
 
-	@FindBy(xpath = "//div[@class='flex-row display-flex header-title-div']/p[text()='Documents']")
-	WebElement documentsLinkTopMenu;
-
 	/**
-	 * Clicks the <i>Documents</i> link in the top menu.
+	 * Clicks the <i>Home</i> slide menu link.
 	 */
-	public void clickDocumentsTopLink() {
+	public void clickHomeSlideMenuLink() {
 		AutomationHelper.printMethodName();
-		documentsLinkTopMenu.click();
+		clickSlideMenu();
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Home')]")));
+
+		WebElement homeLinkInSlide = driver.findElement(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Home')]"));
+
+		homeLinkInSlide.click();
+
 	}
 
 	/**
-	 * Returns a boolean to if the <b>Document(s)</b> is present. This is for the
-	 * top link
+	 * Returns a boolean to if the <b>Document(s)</b> slide link is present.
 	 * 
 	 * @return boolean
 	 */
-	public boolean isDocumentsTopLinkPresent() {
+	public boolean isDocumentsSlideLinkPresent() {
 		AutomationHelper.printMethodName();
-		return isWebElementPresent("//div[@class='flex-row display-flex header-title-div']/p[text()='Documents']");
+		clickSlideMenu();
+		return isWebElementPresent(
+				"//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Documents')]");
 	}
 
-	@FindBy(xpath = "//div[@class='flex-row display-flex header-title-div']/p[text()='About']")
-	WebElement aboutLink;
-
 	/**
-	 * Clicks the <i>About</i> link in the top menu.
+	 * Clicks the <i>Documents</i> link in the slide menu.
 	 */
-	public void clickAboutLink() {
+	public void clickDocumentsSlideMenuLink() {
 		AutomationHelper.printMethodName();
-		aboutLink.click();
+		clickSlideMenu();
+		WebElement documentsSlideMenu = driver.findElement(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Documents')]"));
+		documentsSlideMenu.click();
 	}
 
 	/**
-	 * Returns a boolean to if the <b>About</b> is present. This is for the top link
+	 * Returns a boolean to if the <b>Q&A</b> slide link is present.
 	 * 
 	 * @return boolean
 	 */
-	public boolean isAboutLinkPresent() {
+	public boolean isQandASlideLinkPresent() {
 		AutomationHelper.printMethodName();
-		return isWebElementPresent("//div[@class='flex-row display-flex header-title-div']/p[text()='About']");
+		clickSlideMenu();
+		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Q&A')]");
 	}
 
-	// This is the icon of the person where the Settings and Logout are present
-	// The OR in the xpath is because the object type changes inside the settings
-	// menus.
-//	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'][2] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
-	@FindBy(xpath = "//p[@class='ant-dropdown-trigger header-title'] | //p[@class='ant-dropdown-trigger header-title active-header'] | //p[@class='ant-dropdown-trigger header-title ant-dropdown-open']")
-	WebElement profileMenu;
+	/**
+	 * Clicks the <i>Q&A</i> link in the slide menu.
+	 */
+	public void clickQandASlideLink() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		WebElement aboutSlideMenu = driver.findElement(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Q&A')]"));
+		aboutSlideMenu.click();
+	}
 
 	/**
-	 * Clicks the Profile Menu
+	 * Returns a boolean to if the <b>About</b> slide link is present.
+	 * 
+	 * @return boolean
+	 */
+	public boolean isAboutSlideLinkPresent() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'About')]");
+	}
+
+	/**
+	 * Clicks the <i>About</i> link in the slide menu.
+	 */
+	public void clickAboutSlideLink() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		WebElement aboutSlideMenu = driver.findElement(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'About')]"));
+		aboutSlideMenu.click();
+	}
+
+	/**
+	 * Returns a boolean to if the <b>Logout</b> slide link present.
+	 * 
+	 * @return boolean
+	 */
+	public boolean isLogoutSlideLinkPresent() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Logout')]");
+	}
+
+	/**
+	 * Clicks the <i>Logout</i> link in the slide menu.
+	 */
+	public void clickLogoutSlideLink() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		WebElement logoutSlideMenu = driver.findElement(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Logout')]"));
+		logoutSlideMenu.click();
+	}
+
+	/**
+	 * Clicks the Profile Menu. Clicking this button lands you on the Settings page.
 	 */
 	public void clickProfileMenu() {
 
-		// We must see if the profile menu is already open before we click it.
-
-		// Try to get a reference to the expanded menu
-		// Wait for the Sub-menu to appear
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
-
-		// If this xpath is found, it means that the menu is already open and we will
-		// not need to perform the click
-		String subMenuContainerXpath = "//div[@class = 'ant-dropdown ant-dropdown-show-arrow ant-dropdown-placement-bottomRight']";
-		List<WebElement> subMenuElements = driver.findElements(By.xpath(subMenuContainerXpath));
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
-
-		// If there is a hidden menu found, the size will be 1, and this will evaluate
-		// to true, and the click will happen in the IF statement.
-		boolean clickNeeded = subMenuElements.size() > 0;
-
-		// If click is NOT needed
-		if (!clickNeeded) {
-			profileMenu.click();
-		}
+		WebElement profileMenuButton = driver.findElement(By.xpath(
+				"//span[contains(@class, 'material-symbols-outlined active_icon')] | //span[contains(@class, 'material-symbols-outlined user_icon')]"));
+		profileMenuButton.click();
 
 	}
 
-	/**
-	 * Click the Settings menu
-	 */
-	public void clickSettings() {
-		AutomationHelper.printMethodName();
 
-		clickProfileMenu();
-
-		// Wait for the Sub-menu to appear
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
-
-		String settingsXpath = "//p[text()='Settings']";
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(settingsXpath)));
-
-		// Once the above menu is present, then we can click the sub menus.
-		WebElement settingsLink = driver.findElement(By.xpath(settingsXpath));
-
-		settingsLink.click();
-	}
-
-	/**
-	 * Returns a boolean to if the <b>Settings</b> is present. This is for the top
-	 * menu and under the person icon
-	 * 
-	 * @return boolean
-	 */
-	public boolean isSettingsLinkPresent() {
-		AutomationHelper.printMethodName();
-
-		clickProfileMenu();
-
-		// Wait for the Sub-menu to appear
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
-
-		String settingsXpath = "//p[text()='Settings']";
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(settingsXpath)));
-
-		return isWebElementPresent(settingsXpath);
-	}
-
-	/**
-	 * Click the Logout menu
-	 */
-	public void clickLogout() {
-		AutomationHelper.printMethodName();
-
-		clickProfileMenu();
-
-		// Wait for the Sub-menu to appear
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
-
-		String logoutXpath = "//p[contains(text(),'Logout')]";
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(logoutXpath)));
-
-		// Once the above menu is present, then we can click the sub menus.
-		WebElement logoutLink = driver.findElement(By.xpath(logoutXpath));
-
-		logoutLink.click();
-	}
-
-	/**
-	 * Returns a boolean to if the <b>Settings</b> is present. This is for the top
-	 * menu and under the person icon
-	 * 
-	 * @return boolean
-	 */
-	public boolean isLogoutLinkPresent() {
-		AutomationHelper.printMethodName();
-
-		clickProfileMenu();
-
-		// Wait for the Sub-menu to appear
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(SHORT_TIMEOUT));
-
-		String logoutXpath = "//p[contains(text(),'Logout')]";
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(logoutXpath)));
-
-		return isWebElementPresent(logoutXpath);
-	}
 
 	/*
 	 * The following methods check to see if the objects are present on a page for
 	 * the left menu
 	 * 
 	 */
-	public String xpathSearchResults = "//div[@class = 'search_result_top bdr_btm searchResult']";
-	public String xpathEvaluationYearLink = "//span[text()='Evaluation year']";
+	public String xpathEvaluationTimeLink = "//span[text()='Evaluation Time']";
 	public String xpathDocumentsLink = "//span[text()='Document(s)']";
 	public String xpathCategoryLink = "//span[text()='Category']";
 	public String xpathDomainsLink = "//span[text()='Domain(s)']";
 	public String xpathHistoryLink = "//span[text()='History']";
 
+
 	/**
-	 * Checks for the presence of the <b>Search Results</b> DIV.
+	 * Checks for the presence of the <b>Evaluation Time</b> DIV.
 	 * 
 	 * @return boolean
 	 */
-	public boolean isSearchResultsPresent() {
+	public boolean isEvaluationTimePresent() {
 		AutomationHelper.printMethodName();
-		return isWebElementPresent(xpathSearchResults);
+		return isWebElementPresent(xpathEvaluationTimeLink);
 	}
 
 	/**
-	 * Checks for the presence of the <b>EVALUATION YEAR</b> DIV.
-	 * 
-	 * @return boolean
+	 * Clicks the <b>Evaluation Time</b> left hand link to display the sub-objects
 	 */
-	public boolean isEvaluationYearPresent() {
-		AutomationHelper.printMethodName();
-		return isWebElementPresent(xpathEvaluationYearLink);
-	}
-
-	/**
-	 * Clicks the <b>EVALUATION YEAR</b> left hand link to display the sub-objects
-	 */
-	public void clickEvaluationYear() {
+	public void clickEvaluationTime() {
 		AutomationHelper.printMethodName();
 
 		// The following xpath contains an expanded property (the two .. go up two
 		// levels). We must pull attribute property
-		String xpanderDiv = xpathEvaluationYearLink + "/../../div[@class='ant-collapse-header']";
+		String xpanderDiv = xpathEvaluationTimeLink + "/../../div[@class='ant-collapse-header']";
 		WebElement evaluationYear = driver.findElement(By.xpath(xpanderDiv));
 
 		boolean expandProperty = Boolean.valueOf(evaluationYear.getAttribute("aria-expanded"));
 
 		if (!expandProperty) {
 			// Click the button
-			WebElement evaluationYearLink = driver.findElement(By.xpath(xpathEvaluationYearLink));
+			WebElement evaluationYearLink = driver.findElement(By.xpath(xpathEvaluationTimeLink));
 
 			// Because elements consistently move as they're being expanded, we must move to
 			// it as to not have click interceptions.
 			moveToElement(evaluationYear);
 
 			evaluationYearLink.click();
+
+			// Wait a brief moment to allow the menu to expand. This is more for visual than
+			// function.
+			AutomationHelper.waitSeconds(1);
+
 		}
 	}
 
@@ -317,13 +297,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			moveToElement(categoryLink);
 
 			categoryLink.click();
-		}
-	}
 
-	private void moveToElement(WebElement elementToMoveTo) {
-//		WebElement element = driver.findElement(By.id("header-account"));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(elementToMoveTo).click().build().perform();
+			// Wait a brief moment to allow the menu to expand. This is more for visual than
+			// function.
+			AutomationHelper.waitSeconds(1);
+		}
 	}
 
 	/**
@@ -358,6 +336,10 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			moveToElement(documentsLink);
 
 			documentsLink.click();
+
+			// Wait a brief moment to allow the menu to expand. This is more for visual than
+			// function.
+			AutomationHelper.waitSeconds(1);
 		}
 	}
 
@@ -388,11 +370,15 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			// Click the button
 			WebElement domainsLink = driver.findElement(By.xpath(xpanderDiv));
 
-//			// Because elements consistently move as they're being expanded, we must move to
-//			// it as to not have click interceptions.
-//			moveToElement(domainsLink);
+			// Because elements consistently move as they're being expanded, we must move to
+			// it as to not have click interceptions.
+			moveToElement(domainsLink);
 
 			domainsLink.click();
+
+			// Wait a brief moment to allow the menu to expand. This is more for visual than
+			// function.
+			AutomationHelper.waitSeconds(1);
 		}
 	}
 
@@ -428,7 +414,22 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			moveToElement(historyLink);
 
 			historyLink.click();
+
+			// Wait a brief moment to allow the menu to expand. This is more for visual than
+			// function.
+			AutomationHelper.waitSeconds(1);
 		}
+	}
+
+	/**
+	 * Performs an action to Move to an element. Will move to the passed in element.
+	 * 
+	 * @param elementToMoveTo
+	 */
+	private void moveToElement(WebElement elementToMoveTo) {
+		// WebElement element = driver.findElement(By.id("header-account"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(elementToMoveTo).build().perform();
 	}
 
 	/**
@@ -549,8 +550,7 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 *
 	 */
 	public class Domains {
-		
-		
+
 		/**
 		 * Method to check for the visible presence of the Domain(s) pop out. If the
 		 * "Add Domain(s)" button was clicked, this menu should appear.
@@ -689,12 +689,12 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			}
 
 		}
-		
+
 		/**
 		 * Method to unselect all currently selected domains
 		 */
 		public void unselectAllDomains() {
-			
+
 			clickDomains();
 
 			// First, open all of the closed domains
@@ -707,11 +707,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 					By.xpath("//span[@class = 'ant-tree-checkbox ant-tree-checkbox-checked']/following-sibling::span"));
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
 
-			for(WebElement currentCheckedDomain : checkedDomains) {
+			for (WebElement currentCheckedDomain : checkedDomains) {
 				currentCheckedDomain.click();
 				AutomationHelper.waitMillis(100);
 			}
-			
+
 		}
 
 		@FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg upl_btn_icon']")
@@ -734,19 +734,19 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 
 			AutomationHelper.printMethodName();
 
-			//Adjust time outs 
+			// Adjust time outs
 
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 
-			//Grab a list of all of the triangle expanders
+			// Grab a list of all of the triangle expanders
 			List<WebElement> closedDomainGroups = driver
 					.findElements(By.xpath("//span[@class = 'ant-tree-switcher ant-tree-switcher_close']"));
-				
+
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
 
 			for (WebElement currentDomainGroup : closedDomainGroups) {
 
-				//TODO - Click interception can happen here.
+				// TODO - Click interception can happen here.
 				currentDomainGroup.click();
 
 				AutomationHelper.waitMillis(300);
@@ -754,27 +754,19 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 			}
 
 		}
-		
+
 		/**
-		 * Clicks the Search Domains button in the left hand menu. Note: Will wait for the page to load.
+		 * Clicks the Search Domains button in the left hand menu. Note: Will wait for
+		 * the page to load.
 		 */
 		public void clickSearchDomains() {
 			AutomationHelper.printMethodName();
-			
+
 			WebElement searchButton = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary']"));
-			
+
 			searchButton.click();
 			waitForPageToLoad();
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 }
