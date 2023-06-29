@@ -57,7 +57,7 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		// Search Page
 		SearchPageFactory searchPF = new SearchPageFactory();
 
-		searchPF.clickDocumentsTopLink();
+		searchPF.clickDocumentsSlideMenuLink();
 
 		// Documents page
 		DocumentsPageFactory documentsPF = new DocumentsPageFactory();
@@ -87,7 +87,7 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		}
 
 		// Navigate back to the main search page.
-		documentsPF.clickHomeTopLink();
+		documentsPF.clickHomeSlideMenuLink();
 
 		// Obtain a new reference to the search page
 		searchPF = new SearchPageFactory();
@@ -119,7 +119,7 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 		 */
 
 		// Navigate back to the documents section
-		searchPF.clickDocumentsTopLink();
+		searchPF.clickDocumentsSlideMenuLink();
 
 		// Obtain a reference to the Documents page, again
 		documentsPF = new DocumentsPageFactory();
