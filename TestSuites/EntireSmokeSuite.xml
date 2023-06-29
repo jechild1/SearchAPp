@@ -14,10 +14,10 @@
 			<class name="testCases.SmokeTests.LeftMenusSmoke" />
 		</classes>
 	</test>
-	<test name="Smoke Test - Top Menus" preserve-order="true"
+	<test name="Smoke Test - Side Menus" preserve-order="true"
 		enabled="true" group-by-instances="true">
 		<classes>
-			<class name="testCases.SmokeTests.TopMenusSmoke" />
+			<class name="testCases.SmokeTests.SideMenusSmoke" />
 		</classes>
 	</test>
 	
