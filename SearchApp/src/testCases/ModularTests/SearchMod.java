@@ -63,6 +63,5 @@ public class SearchMod extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(searchPF.readSearchField(), searchText);
 
 		searchPF.clickSearchMagnifyingGlass();
-
 	}
 }
