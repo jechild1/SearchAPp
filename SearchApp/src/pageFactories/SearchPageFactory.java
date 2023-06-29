@@ -71,7 +71,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		return AutomationHelper.getText(searchField);
 	}
 
-	@FindBy(xpath = "//span[@aria-label= 'search']")
+	@FindBy(xpath = "//*[name()='svg' and contains (@data-testid,'SearchIcon') ]")
 	WebElement searchIcon;
 
 	/**
@@ -130,7 +130,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 //		}
 //	}
 
-	@FindBy(xpath = "//button[@class = 'ant-btn ant-btn-default addon_btn']")
+	@FindBy(xpath = "//button[contains(text(), 'All Domain')]")
 	WebElement allDomainsButton;
 
 	/**
@@ -151,7 +151,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 			// This is the popout. Wait a max of two seconds.
 			wait.until(
-					ExpectedConditions.elementToBeClickable(By.xpath("//div[@class = 'ant-popover-inner-content']")));
+					ExpectedConditions.elementToBeClickable(By.xpath("//div[@class = 'ant-tree-list-holder-inner']")));
 		}
 	}
 
@@ -166,7 +166,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		// Adjust Timeout Temporarily
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
 
-		List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-popover-inner-content']"));
+		List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-tree-list-holder-inner']"));
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
 
@@ -217,7 +217,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 		// Find a list of checked domains
 
 		// Find the Domains Menu - Used to reduce scope.
-		WebElement domainMenu = driver.findElement(By.xpath("//div[@class = 'ant-popover-inner-content']"));
+		WebElement domainMenu = driver.findElement(By.xpath("//div[@class = 'ant-tree-list-holder-inner']"));
 
 		// Find all of the elements that are currently checked. This is surrounded by
 		// time managers as to reduce wait time.
@@ -255,7 +255,9 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 			// Check the checkbox
 			currentCheckBox.click();
 		}
-
+		
+		//We must draw attention away from the domain check box.
+		AutomationHelper.hitEscape();
 	}
 
 	/**
@@ -298,7 +300,8 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 	 * Method to unselect all currently selected domains
 	 */
 	public void unselectAllDomains() {
-
+		
+		//This clicks the modal to open up the domains pop up scrolling list
 		clickAllDomainsButton();
 
 		// First, open all of the closed domains
@@ -313,7 +316,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 
 		for (WebElement currentCheckedDomain : checkedDomains) {
 			currentCheckedDomain.click();
-			AutomationHelper.waitMillis(100);
+			AutomationHelper.waitMillis(350);
 		}
 
 	}
@@ -352,7 +355,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 
 			currentDomainGroup.click();
 
-			AutomationHelper.waitMillis(100);
+			AutomationHelper.waitMillis(350);
 
 		}
 
