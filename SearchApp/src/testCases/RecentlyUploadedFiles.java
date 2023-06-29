@@ -38,7 +38,7 @@ public class RecentlyUploadedFiles extends SearchBaseTestScriptConfig {
 
 		// Land on the Search page
 		SearchPageFactory searchPF = new SearchPageFactory();
-		searchPF.clickDocumentsTopLink();
+		searchPF.clickDocumentsSlideMenuLink();
 
 		// Documents page displayed
 		DocumentsPageFactory documentsPF = new DocumentsPageFactory();
@@ -49,7 +49,7 @@ public class RecentlyUploadedFiles extends SearchBaseTestScriptConfig {
 //		Assert.assertEquals(documentsPF.getDocumentsTable().isRowInTableByValue("File Name(s)", fileWithPDF), true, "TEST");
 
 		// Navigate back to the Serach page
-		documentsPF.clickHomeTopLink();
+		documentsPF.clickHomeSlideMenuLink();
 
 		searchPF = new SearchPageFactory();
 
