@@ -29,7 +29,7 @@ public class SettingsMenusSmoke extends SearchBaseTestScriptConfig {
 
 		//Main Search Page displayed - Click Settings
 		SearchPageFactory spPF = new SearchPageFactory();
-		spPF.clickSettings();
+		spPF.clickProfileMenu();
 		
 		//Settings Page
 		SettingsPageFactory settingsPF = new SettingsPageFactory();
@@ -66,7 +66,7 @@ public class SettingsMenusSmoke extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(billingPageFactory.readPageHeader(), "Billing Under Development", "Billing Page - Header Text");
 		
 		//Logout
-		billingPageFactory.clickLogout();
+		billingPageFactory.clickLogoutSlideLink();
 
 		
 
