@@ -27,7 +27,7 @@ public class Search extends SearchBaseTestScriptConfig {
 		
 		//Search Page
 		SearchMod search = new SearchMod();
-		search.search("How can Aretec save money on taxes?", "DEFAULT", "Proposals");
+		search.search("How can Aretec save money on taxes?", "Proposals");
 		
 		//Search Results
 		SearchResultsPageFactory searchResultsPF = new SearchResultsPageFactory();
