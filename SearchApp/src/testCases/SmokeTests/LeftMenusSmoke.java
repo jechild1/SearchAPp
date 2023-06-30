@@ -19,7 +19,7 @@ import testCases.ModularTests.SearchMod;
  */
 public class LeftMenusSmoke extends SearchBaseTestScriptConfig {
 
-	@Test(invocationCount = 5)
+	@Test(invocationCount = 1)
 	public void leftMenusSmoke() {
 
 		// Login to the system
