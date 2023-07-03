@@ -762,9 +762,10 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		public void clickSearchDomains() {
 			AutomationHelper.printMethodName();
 
-			WebElement searchButton = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary']"));
+			WebElement searchButton = driver.findElement(By.xpath("//button/span[@class = 'anticon anticon-double-right']"));
 
 			searchButton.click();
+			
 			waitForPageToLoad();
 		}
 
