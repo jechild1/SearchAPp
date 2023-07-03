@@ -321,7 +321,7 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 
 	}
 
-	@FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg upl_btn_icon']")
+	@FindBy(xpath = "//button[text() = 'Upload Files']")
 	WebElement uploadFilesButton;
 
 	/**
