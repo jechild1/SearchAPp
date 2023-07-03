@@ -107,7 +107,7 @@ public abstract class diSearchBase extends SearchConfig {
 			PageFactory.initElements(driver, this);
 		}
 
-		@FindBy(xpath = "//button[@class = 'ant-btn ant-btn-default']/span[text() = 'Select Domain']")
+		@FindBy(xpath = "//div[@class = 'header_modal']//button[contains(text() , 'Domain')]")
 		WebElement selectDomainsButton;
 
 //		/**
@@ -136,7 +136,7 @@ public abstract class diSearchBase extends SearchConfig {
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 				// This is the popout. Wait a max of two seconds.
 				wait.until(ExpectedConditions
-						.elementToBeClickable(By.xpath("//div[@class = 'ant-popover-inner-content']")));
+						.elementToBeClickable(By.xpath("//div[@class = 'header_modal']//button[contains(text() , 'Domain')]")));
 			}
 		}
 
@@ -151,7 +151,7 @@ public abstract class diSearchBase extends SearchConfig {
 			// Adjust Timeout Temporarily
 			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
 
-			List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-popover-inner-content']"));
+			List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-tree-list-holder']"));
 
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
 
@@ -203,7 +203,7 @@ public abstract class diSearchBase extends SearchConfig {
 			// Find a list of checked domains
 
 			// Find the Domains Menu - Used to reduce scope.
-			WebElement domainMenu = driver.findElement(By.xpath("//div[@class = 'ant-popover-inner-content']"));
+			WebElement domainMenu = driver.findElement(By.xpath("//div[@class = 'ant-tree-list-holder-inner']"));
 
 			// Find all of the elements that are currently checked. This is surrounded by
 			// time managers as to reduce wait time.
@@ -310,7 +310,7 @@ public abstract class diSearchBase extends SearchConfig {
 
 		}
 
-		@FindBy(xpath = "//button/span[text()='Upload']")
+		@FindBy(xpath = "//button[text()='Upload']")
 		WebElement uploadButton;
 
 		/**
@@ -325,7 +325,7 @@ public abstract class diSearchBase extends SearchConfig {
 
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 			wait.until(ExpectedConditions
-					.invisibilityOf(driver.findElement(By.xpath("//div[@class='ant-modal-content']"))));
+					.invisibilityOf(driver.findElement(By.xpath("//div[@class='ant-modal file_upload_modal_cont']"))));
 
 		}
 
