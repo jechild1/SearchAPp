@@ -66,7 +66,7 @@ public class SettingsMenusSmoke extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(billingPageFactory.readPageHeader(), "Billing Under Development", "Billing Page - Header Text");
 		
 		//Logout
-		billingPageFactory.clickLogoutSlideLink();
+		billingPageFactory.clickLogout();
 
 		
 
