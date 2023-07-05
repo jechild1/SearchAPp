@@ -157,6 +157,29 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	}
 
 	/**
+	 * Returns a boolean to if the <b>History</b> slide link is present.
+	 * 
+	 * @return boolean
+	 */
+	public boolean isHistorySlideLinkPresent() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		return isWebElementPresent(
+				"//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'History')]");
+	}
+
+	/**
+	 * Clicks the <i>History</i> link in the slide menu.
+	 */
+	public void clickHistorySlideLink() {
+		AutomationHelper.printMethodName();
+		clickSlideMenu();
+		WebElement aboutSlideMenu = driver.findElement(
+				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'History')]"));
+		aboutSlideMenu.click();
+	}
+
+	/**
 	 * Returns a boolean to if the <b>About</b> slide link is present.
 	 * 
 	 * @return boolean
@@ -179,78 +202,62 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	}
 
 	/**
-	 * Returns a boolean to if the <b>Logout</b> slide link present.
-	 * 
-	 * @return boolean
-	 */
-	public boolean isLogoutSlideLinkPresent() {
-		AutomationHelper.printMethodName();
-		clickSlideMenu();
-		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Logout')]");
-	}
-
-	/**
-	 * Clicks the <i>Logout</i> link in the slide menu.
-	 */
-	public void clickLogoutSlideLink() {
-		AutomationHelper.printMethodName();
-		clickSlideMenu();
-		WebElement logoutSlideMenu = driver.findElement(
-				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Logout')]"));
-		logoutSlideMenu.click();
-	}
-
-	/**
 	 * Clicks the Profile Menu. Clicking this button lands you on the Settings page.
 	 */
 	public void clickProfileMenu() {
 
-		WebElement profileMenuButton = driver.findElement(By.xpath(
-				"//span[contains(@class, 'material-symbols-outlined active_icon')] | //span[contains(@class, 'material-symbols-outlined user_icon')]"));
+		WebElement profileMenuButton = driver.findElement(By.xpath("//span[text()='manage_accounts']"));
 		profileMenuButton.click();
 
 	}
 
+	/**
+	 * Clicks the Logout button in the top right.
+	 */
+	public void clickLogout() {
 
+		WebElement logoutButton = driver.findElement(By.xpath("//span[text()='logout']"));
+		logoutButton.click();
+
+	}
 
 	/*
 	 * The following methods check to see if the objects are present on a page for
 	 * the left menu
 	 * 
 	 */
-	public String xpathEvaluationTimeLink = "//span[text()='Evaluation Time']";
+	public String xpathDateLink = "//span[text()='Date']";
 	public String xpathDocumentsLink = "//span[text()='Document(s)']";
 	public String xpathCategoryLink = "//span[text()='Category']";
 	public String xpathDomainsLink = "//span[text()='Domain(s)']";
 	public String xpathHistoryLink = "//span[text()='History']";
 
-
 	/**
-	 * Checks for the presence of the <b>Evaluation Time</b> DIV.
+	 * Checks for the presence of the <b>Date</b> DIV.
 	 * 
 	 * @return boolean
 	 */
-	public boolean isEvaluationTimePresent() {
+	public boolean isDatePresent() {
 		AutomationHelper.printMethodName();
-		return isWebElementPresent(xpathEvaluationTimeLink);
+		return isWebElementPresent(xpathDateLink);
 	}
 
 	/**
-	 * Clicks the <b>Evaluation Time</b> left hand link to display the sub-objects
+	 * Clicks the <b>Date</b> left hand link to display the sub-objects
 	 */
-	public void clickEvaluationTime() {
+	public void clickDate() {
 		AutomationHelper.printMethodName();
 
 		// The following xpath contains an expanded property (the two .. go up two
 		// levels). We must pull attribute property
-		String xpanderDiv = xpathEvaluationTimeLink + "/../../div[@class='ant-collapse-header']";
+		String xpanderDiv = xpathDateLink + "/../../div[@class='ant-collapse-header']";
 		WebElement evaluationYear = driver.findElement(By.xpath(xpanderDiv));
 
 		boolean expandProperty = Boolean.valueOf(evaluationYear.getAttribute("aria-expanded"));
 
 		if (!expandProperty) {
 			// Click the button
-			WebElement evaluationYearLink = driver.findElement(By.xpath(xpathEvaluationTimeLink));
+			WebElement evaluationYearLink = driver.findElement(By.xpath(xpathDateLink));
 
 			// Because elements consistently move as they're being expanded, we must move to
 			// it as to not have click interceptions.
@@ -762,10 +769,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		public void clickSearchDomains() {
 			AutomationHelper.printMethodName();
 
-			WebElement searchButton = driver.findElement(By.xpath("//button/span[@class = 'anticon anticon-double-right']"));
+			WebElement searchButton = driver
+					.findElement(By.xpath("//button/span[@class = 'anticon anticon-double-right']"));
 
 			searchButton.click();
-			
+
 			waitForPageToLoad();
 		}
 
