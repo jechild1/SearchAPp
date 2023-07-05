@@ -92,4 +92,82 @@ public class SearchResultsPageFactory extends diSearchMenusPageFactory {
 
 	}
 
+	/**
+	 * Getter method for References objects
+	 * 
+	 * @return References
+	 */
+	public References getReferences() {
+		return new References();
+	}
+
+	/**
+	 * Sub-class that contains methods for interacting with objects in the
+	 * References section
+	 * 
+	 * @author Jesse Childress
+	 *
+	 */
+	public class References {
+
+		// Expand references section
+
+		/**
+		 * Utility method to expand the references section, if not already expanded.
+		 */
+		private void expandReferencesSection() {
+			// Ensure that it is not already open
+			WebElement referencesSection = driver
+					.findElement(By.xpath("//div[@class='ant-collapse-header']/span[text() = 'Reference(s)']"));
+
+			boolean expanded = Boolean.valueOf(referencesSection.getAttribute("aria-disabled"));
+
+			// If it is NOT already open, open it
+			if (!expanded) {
+				referencesSection.click();
+			}
+		}
+
+		WebElement referencesContainer = driver.findElement(By.xpath(
+				"//div[@class='ant-collapse-header'][1]/span[text() = 'Reference(s)']//ancestor::div[@class = 'ant-collapse-item ant-collapse-item-active ref']"));
+
+		/**
+		 * Reads the <b>File Name</b> in the References section
+		 * 
+		 * @return String
+		 */
+		public String readFileName() {
+			AutomationHelper.printMethodName();
+
+			expandReferencesSection();
+
+			String fileName = AutomationHelper
+					.getText(referencesContainer.findElement(By.xpath("//p[@class='name space_0']/parent::span")));
+
+			return fileName;
+		}
+
+		/**
+		 * Returns the <b>Upload Date</b> in the References section. Note: this only
+		 * returns the date.
+		 * 
+		 * @return String
+		 */
+		public String readUploadDate() {
+			AutomationHelper.printMethodName();
+
+			expandReferencesSection();
+
+			String completeText = AutomationHelper
+					.getText(referencesContainer.findElement(By.xpath("//p[@class = 'space_0']")));
+
+			// String looks like "Upload Text: 2023-07-04"
+			completeText = completeText.substring(completeText.lastIndexOf(" "), completeText.length()).trim();
+
+			return completeText;
+
+		}
+
+	}
+
 }
