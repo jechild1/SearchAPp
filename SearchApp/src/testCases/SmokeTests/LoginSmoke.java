@@ -14,7 +14,7 @@ import testCases.ModularTests.LoginMod;
  */
 public class LoginSmoke extends SearchBaseTestScriptConfig {
 
-	@Test
+	@Test (invocationCount = 1)
 	public void loginSmokeTest() {
 
 		Reporter.log("Beginning Login Smoke Test...", true);
@@ -24,5 +24,4 @@ public class LoginSmoke extends SearchBaseTestScriptConfig {
 		loginMod.login(USER_NAME, PASSWORD);	
 
 	}
-
 }
