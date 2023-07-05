@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageFactories.DocumentsPageFactory;
+import pageFactories.HistoryPageFactory;
+import pageFactories.QandAPageFactory;
 import pageFactories.SearchPageFactory;
 import testCases.SearchBaseTestScriptConfig;
 import testCases.ModularTests.LoginMod;
@@ -17,7 +19,7 @@ import testCases.ModularTests.LoginMod;
  */
 public class SlideMenusSmoke extends SearchBaseTestScriptConfig {
 
-	@Test(invocationCount = 1)
+	@Test(invocationCount = 20)
 	public void TopMenusSmokeTest() {
 
 		// Login to the system
@@ -32,8 +34,8 @@ public class SlideMenusSmoke extends SearchBaseTestScriptConfig {
 		Assert.assertEquals(spPF.isHomeLinkPresent(), true, "Side Menus - Home Link");
 		Assert.assertEquals(spPF.isDocumentsSlideLinkPresent(), true, "Side Menus - Documents Link");
 		Assert.assertEquals(spPF.isQandASlideLinkPresent(), true, "Side Menus - Q&A Link");
+		Assert.assertEquals(spPF.isHistoryPresent(), true, "Side Menus - History Link");
 		Assert.assertEquals(spPF.isAboutSlideLinkPresent(), true, "Side Menus - About Link");
-		Assert.assertEquals(spPF.isLogoutSlideLinkPresent(), true, "Top Menus - Logout Link");
 
 		// Click through links
 
@@ -47,18 +49,20 @@ public class SlideMenusSmoke extends SearchBaseTestScriptConfig {
 
 		// Click Q&A
 		spPF.clickQandASlideLink();
-//		QandAPageFactory qaPF = new QandAPageFactory();
+		QandAPageFactory qaPF = new QandAPageFactory();
+
+		// Click History
+		qaPF.clickHistorySlideLink();
 
 		// Go back home
-		// TODO - There is something about this method that causes a stale reference
-		// with it goes to Q&A Page.
-//		qaPF.clickHomeSlideMenuLink();
+		HistoryPageFactory historyPF = new HistoryPageFactory();
 
+		historyPF.clickHomeSlideMenuLink();
+
+		// Logout
 		spPF = new SearchPageFactory();
 
-		// Clicking Logout
-		spPF.clickLogoutSlideLink();
-
+		spPF.clickLogout();
 	}
 
 }
