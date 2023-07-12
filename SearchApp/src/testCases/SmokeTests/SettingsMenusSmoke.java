@@ -21,7 +21,7 @@ import testCases.ModularTests.LoginMod;
 public class SettingsMenusSmoke extends SearchBaseTestScriptConfig {
 
 	@Test(invocationCount = 1)
-	public void TopMenusSmokeTest() {
+	public void SettingsMenuSmokeTest() {
 
 		// Login to the system
 		LoginMod loginMod = new LoginMod();

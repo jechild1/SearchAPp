@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -89,7 +90,9 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public boolean isHomeLinkPresent() {
 		AutomationHelper.printMethodName();
-		clickSlideMenu();
+		if (!isSlideMenuOpen()) {
+			clickSlideMenu();
+		}
 		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Home')]");
 	}
 
@@ -118,7 +121,9 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public boolean isDocumentsSlideLinkPresent() {
 		AutomationHelper.printMethodName();
-		clickSlideMenu();
+		if (!isSlideMenuOpen()) {
+			clickSlideMenu();
+		}
 		return isWebElementPresent(
 				"//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Documents')]");
 	}
@@ -128,8 +133,9 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public void clickDocumentsSlideMenuLink() {
 		AutomationHelper.printMethodName();
-		clickSlideMenu();
-		WebElement documentsSlideMenu = driver.findElement(
+		if (!isSlideMenuOpen()) {
+			clickSlideMenu();
+		}		WebElement documentsSlideMenu = driver.findElement(
 				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Documents')]"));
 		documentsSlideMenu.click();
 	}
@@ -141,7 +147,9 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public boolean isQandASlideLinkPresent() {
 		AutomationHelper.printMethodName();
-		clickSlideMenu();
+		if (!isSlideMenuOpen()) {
+			clickSlideMenu();
+		}
 		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Q&A')]");
 	}
 
@@ -163,7 +171,9 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public boolean isHistorySlideLinkPresent() {
 		AutomationHelper.printMethodName();
-		clickSlideMenu();
+		if (!isSlideMenuOpen()) {
+			clickSlideMenu();
+		}
 		return isWebElementPresent(
 				"//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'History')]");
 	}
@@ -186,7 +196,9 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public boolean isAboutSlideLinkPresent() {
 		AutomationHelper.printMethodName();
-		clickSlideMenu();
+		if (!isSlideMenuOpen()) {
+			clickSlideMenu();
+		}
 		return isWebElementPresent("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'About')]");
 	}
 
@@ -434,8 +446,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 * @param elementToMoveTo
 	 */
 	private void moveToElement(WebElement elementToMoveTo) {
-		// WebElement element = driver.findElement(By.id("header-account"));
 		Actions actions = new Actions(driver);
+		
+		//This following line is inserted into this method because the Firefox Driver has a MoveTargetOutOfBounds error that happens here.
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", elementToMoveTo);
+		
 		actions.moveToElement(elementToMoveTo).build().perform();
 	}
 

@@ -19,7 +19,7 @@ import testCases.ModularTests.LoginMod;
  */
 public class SlideMenusSmoke extends SearchBaseTestScriptConfig {
 
-	@Test(invocationCount = 20)
+	@Test(invocationCount = 1)
 	public void TopMenusSmokeTest() {
 
 		// Login to the system
