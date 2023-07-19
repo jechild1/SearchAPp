@@ -1,19 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Entire Test Suite" parallel="classes" thread-count="1" verbose="1"
-	group-by-instances="true">
+<suite name="Entire Suite" parallel="classes"
+	thread-count="1" verbose="1" group-by-instances="true">
+	<parameter name="selectedBrowser" value="chrome" />
 	
-	<parameter name="selectedBrowser" value="edge"></parameter>
-
-
-	<test name="Login" preserve-order="true" enabled = "true" group-by-instances="true">
+	<test name="Recent Searches" preserve-order="true"
+		enabled="true" group-by-instances="true">
 		<classes>
-			<class name="testCases.Login.Login"  />
+			<class name="testCases.RecentSearches" />
 		</classes>
-
-	</test> <!--
-	Test -->
-
-
-</suite> <!--
-Suite -->
+	</test>
+	
+	<test name="Search" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Search" />
+		</classes>
+	</test>
+	
+	<test name="File Upload" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.UploadFiles" />
+		</classes>
+	</test>
+	
+		<test name="Search Results - Validation" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.SearchReferencesValidation" />
+		</classes>
+	</test>
+	
+		
+</suite>

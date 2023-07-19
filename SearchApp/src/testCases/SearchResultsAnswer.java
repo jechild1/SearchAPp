@@ -14,12 +14,12 @@ import testCases.ModularTests.SearchMod;
  * @author Jesse Childress
  *
  */
-public class Search extends SearchBaseTestScriptConfig {
+public class SearchResultsAnswer extends SearchBaseTestScriptConfig {
 
 	@Test(invocationCount = 1)
-	public void loginSmokeTest() {
+	public void searchAnswerValidation() {
 
-		Reporter.log("Beginning test for simple search...", true);
+		Reporter.log("Beginning test for a Search Results > Answer...", true);
 
 		String searchResults = "Based on the context provided, there is no information suggesting how Aretec can help you save money on taxes. The information provided focuses on the company's expertise in cybersecurity, application development, and data analytics, as well as their experience working with various government agencies. There is no mention of tax-related services or strategies that would directly help you save money on taxes.";
 
@@ -33,7 +33,7 @@ public class Search extends SearchBaseTestScriptConfig {
 
 		// Search Results
 		SearchResultsPageFactory searchResultsPF = new SearchResultsPageFactory();
-		Assert.assertTrue(searchResultsPF.readAnswer().length() > 100, "Search Page - Results returned over 100 characters.");
+		Assert.assertTrue(searchResultsPF.readAnswer().length() > 100, "Search Page - Answer - Results returned over 100 characters.");
 		
 		
 		

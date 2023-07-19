@@ -362,42 +362,46 @@ public class SearchPageFactory extends diSearchMenusPageFactory {
 	}
 
 	/**
-	 * Method that checks for the presence of a recently uploaded file to be in the
-	 * Recently Uploaded file section.
+	 * Method that checks for the presence of recent search text to be in the
+	 * Recent Searches section.
 	 * <p>
 	 * Note: this method requires that the text be exact, and that the recently
 	 * uploaded files be within the last 5 files uploaded. That is all this object
 	 * holds.
 	 * 
-	 * @param fileNameForSearch
+	 * @param searchTextForSearch
 	 * @return boolean
 	 */
-	public boolean isFileInRecentlyUploaded(String fileNameForSearch) {
+	public boolean isSearchTextInRecentSearches(String searchTextForSearch) {
 		AutomationHelper.printMethodName();
 		boolean found = false;
 
-		List<WebElement> recentlyUploadedList = driver
-				.findElements(By.xpath("//section[@class = 'grid-right-home']//div[@class='recent']"));
+		List<WebElement> recentlySearchedTextList = driver
+				.findElements(By.xpath("//section[@class = 'grid-right-home']//h6"));
 
-		if (recentlyUploadedList.size() > 0) {
+		if (recentlySearchedTextList.size() > 0) {
 
-			// Loop through each of the recently uploaded files that were found. If a match
+			// Loop through each of the recently searched text strings that were found. If a match
 			// is found, break out of the loop and return true.
 
-			for (WebElement currentFile : recentlyUploadedList) {
+			for (WebElement currentSearchText : recentlySearchedTextList) {
 
 				// Get the text of the WebElement
-				String currentFileText = currentFile.getText();
+				String currentFileText = currentSearchText.getText();
+				
 
-				if (currentFileText.equals(fileNameForSearch)) {
+				if (currentFileText.equalsIgnoreCase(searchTextForSearch)) {
+					
 					found = true;
 					break;
 				}
+				
+				
 
 			}
 
 		} else {
-			throw new ElementNotVisibleException("There are no items in the recently uploaded file list");
+			throw new ElementNotVisibleException("There are no search texts matching '" + searchTextForSearch + "' in the recent searches list");
 		}
 
 		return found;

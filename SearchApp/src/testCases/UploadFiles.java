@@ -1,4 +1,4 @@
-package testCases;
+ package testCases;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -172,16 +172,16 @@ public class UploadFiles extends SearchBaseTestScriptConfig {
 				rowFound = documentsPF.getDocumentsTable().isRowInTableByValue(primaryColumnHeader, currentFileName);
 
 				currentFileWaitTime++;
-				
-				//If we didn't find the particular record, we must refresh and try again.
-				if(!rowFound) {
+
+				// If we didn't find the particular record, we must refresh and try again.
+				if (!rowFound) {
 					AutomationHelper.waitSeconds(1);
 					documentsPF.getDomains().clickSearchDomains();
 				}
 
 			} while (!rowFound && currentFileWaitTime < waitTimeMax);
 
-			//This is the purose of the test. Seeing if the files actually made it.
+			// This is the purose of the test. Seeing if the files actually made it.
 			Assert.assertEquals(
 					documentsPF.getDocumentsTable().isRowInTableByValue(primaryColumnHeader, currentFileName), true,
 					"Validating files present: File expected is: " + currentFileName);
