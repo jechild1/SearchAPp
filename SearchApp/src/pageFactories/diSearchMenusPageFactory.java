@@ -2,6 +2,7 @@ package pageFactories;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -135,7 +136,8 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 		AutomationHelper.printMethodName();
 		if (!isSlideMenuOpen()) {
 			clickSlideMenu();
-		}		WebElement documentsSlideMenu = driver.findElement(
+		}
+		WebElement documentsSlideMenu = driver.findElement(
 				By.xpath("//div[contains(@class, 'MuiListItemText-root')]/span [contains(text(), 'Documents')]"));
 		documentsSlideMenu.click();
 	}
@@ -447,10 +449,11 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	private void moveToElement(WebElement elementToMoveTo) {
 		Actions actions = new Actions(driver);
-		
-		//This following line is inserted into this method because the Firefox Driver has a MoveTargetOutOfBounds error that happens here.
+
+		// This following line is inserted into this method because the Firefox Driver
+		// has a MoveTargetOutOfBounds error that happens here.
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", elementToMoveTo);
-		
+
 		actions.moveToElement(elementToMoveTo).build().perform();
 	}
 
@@ -573,28 +576,28 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public class Domains {
 
-		/**
-		 * Method to check for the visible presence of the Domain(s) pop out. If the
-		 * "Add Domain(s)" button was clicked, this menu should appear.
-		 * 
-		 * @return boolean
-		 */
-		private boolean isDomainMenuVisible() {
-
-			// Adjust Timeout Temporarily
-			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
-
-			List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-popover-inner-content']"));
-
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
-
-			if (domainMenu.size() > 0) {
-				return true;
-			} else {
-				return false;
-			}
-
-		}
+//		/**
+//		 * Method to check for the visible presence of the Domain(s) pop out. If the
+//		 * "Add Domain(s)" button was clicked, this menu should appear.
+//		 * 
+//		 * @return boolean
+//		 */
+//		private boolean isDomainMenuVisible() {
+//
+//			// Adjust Timeout Temporarily
+//			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
+//
+//			List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-popover-inner-content']"));
+//
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
+//
+//			if (domainMenu.size() > 0) {
+//				return true;
+//			} else {
+//				return false;
+//			}
+//
+//		}
 
 		/**
 		 * Returns a list of Domains from the Domain list. Only prints to the console.
@@ -789,6 +792,89 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 
 			searchButton.click();
 
+			waitForPageToLoad();
+		}
+
+	}
+
+	/**
+	 * Returns a reference to the History sub-class and associated methods.
+	 * 
+	 * @return History
+	 */
+	public History getHistory() {
+		return new History();
+	}
+
+	/**
+	 * Sub-Class that contains methods for interacting with the History menu
+	 * 
+	 * @author Jesse Childress
+	 *
+	 */
+	public class History {
+
+		/**
+		 * Reads through a list of History "cards" or lines in the History section and
+		 * looks to see if any of them match the passed in string.
+		 * 
+		 * @param historyText
+		 * @return boolean
+		 */
+		public boolean isHistoryCardPresent(String historyText) {
+			AutomationHelper.printMethodName();
+
+			clickHistory();
+
+			// Create a WebElement list of all of the histories in the menu
+			List<WebElement> historyRecordWebElements = driver
+					.findElements(By.xpath("//div[@class = 'hist_container']//div[@class = 'hist_card']"));
+
+			boolean found = false;
+
+			if (historyRecordWebElements.size() > 0) {
+
+				for (WebElement currentHistoryCard : historyRecordWebElements) {
+					if (historyText.toLowerCase().equals(currentHistoryCard.getText().toLowerCase())) {
+						found = true;
+						break;
+					}
+				}
+
+			} else {
+				throw new NoSuchElementException("There are no records present for History");
+			}
+
+			return found;
+		}
+
+		/**
+		 * Clicks the History card that matches the passed in History text.
+		 * 
+		 * @param historyText
+		 */
+		public void clickHistoryCard(String historyText) {
+			AutomationHelper.printMethodName();
+
+			clickHistory();
+
+			// Create a WebElement list of all of the histories in the menu
+			List<WebElement> historyRecordWebElements = driver
+					.findElements(By.xpath("//div[@class = 'hist_container']//div[@class = 'hist_card']"));
+
+			if (historyRecordWebElements.size() > 0) {
+
+				for (WebElement currentHistoryCard : historyRecordWebElements) {
+					if (historyText.toLowerCase().equals(currentHistoryCard.getText().toLowerCase())) {
+						currentHistoryCard.click();
+						break;
+					}
+				}
+
+			} else {
+				throw new NoSuchElementException("There are no records present for History");
+			}
+			AutomationHelper.waitSeconds(1);
 			waitForPageToLoad();
 		}
 

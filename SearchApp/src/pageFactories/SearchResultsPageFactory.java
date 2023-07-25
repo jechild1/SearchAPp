@@ -300,6 +300,14 @@ public class SearchResultsPageFactory extends diSearchMenusPageFactory {
 
 				// Grab the current text of the answer paragraph
 				String initialParagraphText = AutomationHelper.getText(answerParagraph);
+				
+				//Sometimes text does not appear immediately, so we shoud wait
+				int timeCount = 0;
+				while(initialParagraphText == null && timeCount < 30) {
+					AutomationHelper.waitSeconds(1);
+					timeCount ++;
+					System.out.println("Waiting on Chat GBP answer for " + timeCount + " seconds.");
+				}
 
 				// Count the initial characters in the paragraph
 				initialCharacterCount = initialParagraphText.length();
