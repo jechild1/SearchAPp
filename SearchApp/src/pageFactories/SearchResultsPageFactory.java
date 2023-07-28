@@ -1,9 +1,12 @@
 package pageFactories;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import utilities.AutomationHelper;
@@ -139,9 +142,12 @@ public class SearchResultsPageFactory extends diSearchMenusPageFactory {
 			AutomationHelper.printMethodName();
 
 			expandReferencesSection();
+			String xpath = "//div[@class='ant-collapse-header'][1]/span[text() = 'Reference(s)']//ancestor::div[@class = 'ant-collapse-item ant-collapse-item-active ref']//p[@class='name space_0']/parent::span";
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			
+			wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpath), ".pdf"));
 
-			String fileName = AutomationHelper.getText(driver.findElement(By.xpath(
-					"//div[@class='ant-collapse-header'][1]/span[text() = 'Reference(s)']//ancestor::div[@class = 'ant-collapse-item ant-collapse-item-active ref']//p[@class='name space_0']/parent::span")));
+			String fileName = AutomationHelper.getText(driver.findElement(By.xpath(xpath)));
 
 			return fileName;
 		}
@@ -306,6 +312,7 @@ public class SearchResultsPageFactory extends diSearchMenusPageFactory {
 				while(initialParagraphText == null && timeCount < 30) {
 					AutomationHelper.waitSeconds(1);
 					timeCount ++;
+					initialParagraphText = AutomationHelper.getText(answerParagraph);
 					System.out.println("Waiting on Chat GBP answer for " + timeCount + " seconds.");
 				}
 

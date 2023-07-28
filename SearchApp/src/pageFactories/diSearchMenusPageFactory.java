@@ -576,29 +576,6 @@ public abstract class diSearchMenusPageFactory extends diSearchBase {
 	 */
 	public class Domains {
 
-//		/**
-//		 * Method to check for the visible presence of the Domain(s) pop out. If the
-//		 * "Add Domain(s)" button was clicked, this menu should appear.
-//		 * 
-//		 * @return boolean
-//		 */
-//		private boolean isDomainMenuVisible() {
-//
-//			// Adjust Timeout Temporarily
-//			driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10));
-//
-//			List<WebElement> domainMenu = driver.findElements(By.xpath("//div[@class = 'ant-popover-inner-content']"));
-//
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(NORMAL_TIMEOUT));
-//
-//			if (domainMenu.size() > 0) {
-//				return true;
-//			} else {
-//				return false;
-//			}
-//
-//		}
-
 		/**
 		 * Returns a list of Domains from the Domain list. Only prints to the console.
 		 * Note: Only returns top level domains and not sub-domains.

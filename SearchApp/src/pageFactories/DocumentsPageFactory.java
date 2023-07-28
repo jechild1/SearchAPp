@@ -44,14 +44,17 @@ public class DocumentsPageFactory extends diSearchMenusPageFactory {
 	 */
 	public DiTables getDocumentsTable() {
 
-		List<WebElement> documentsTable = driver.findElements(By.xpath("//table"));
+//		List<WebElement> documentsTable = driver.findElements(By.xpath("//table"));
+//
+//		if (documentsTable.size() == 0) {
+//			throw new NoSuchElementException(
+//					"The table does not exist on the documents page. Ensure that there is a table for the selected domains.");
+//		}
+		
+		//Xpath String of the table
+		String xpath = "//table";
 
-		if (documentsTable.size() == 0) {
-			throw new NoSuchElementException(
-					"The table does not exist on the documents page. Ensure that there is a table for the selected domains.");
-		}
-
-		return new DiTables(documentsTable.get(0));
+		return new DiTables(xpath);
 	}
 
 }
